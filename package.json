@@ -1,28 +1,24 @@
 {
-  "name": "tailwindcss-parcel-starter",
+  "name": "Beetfit-PDF",
   "version": "1.0.0",
-  "description": "A simple tailwind starter project with parcel",
+  "description": "Beetfit pdf - templates",
   "scripts": {
     "dev": "npx parcel serve src/**/*.html src/index.html --no-cache",
     "prod": "npx parcel build src/**/*.html src/index.html --no-cache --no-minify"
   },
-  "repository": "https://github.com/SantiMA10/tailwindcss-parcel-starter.git",
-  "author": "Santi <santiagomartinagra@gmail.com>",
+  "repository": "https://github.com/danekkalivoda/beetfit-pdf.git",
+  "author": "Danek Kalivoda <danek.kalivoda@gmail.com>",
   "license": "MIT",
   "devDependencies": {
     "@fullhuman/postcss-purgecss": "^2.2.0",
-    "@tailwindcss/custom-forms": "^0.2.1",
     "autoprefixer": "^9.7.5",
     "parcel": "^2.0.0-alpha.3.2",
     "postcss": "^7.0.27",
+    "postcss-nested": "^4.2.1",
     "posthtml-expressions": "^1.4.1",
     "posthtml-include": "^1.4.3",
+    "posthtml-modules": "^0.6.1",
     "tailwindcss": "^1.4.6",
-    "tailwindcss-gradients": "^3.0.0",
     "typescript": "^3.8.3"
-  },
-  "dependencies": {
-    "postcss-nested": "^4.2.1",
-    "tailwind": "^4.0.0"
   }
 }
