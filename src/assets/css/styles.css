@@ -1,0 +1,51 @@
+/* purgecss start ignore */
+@tailwind base;
+@tailwind components;
+
+html{
+    @apply font-body;
+    scroll-behavior: smooth;
+}
+@media screen and (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+}
+body{
+    @apply bg-gray-200 text-gray-800;
+}
+pre{
+    text-align: left;
+    white-space: pre;
+    word-spacing: normal;
+    word-break: normal;
+    word-wrap: normal;
+
+    -moz-tab-size: 4;
+    -o-tab-size: 4;
+    tab-size: 4;
+
+    -webkit-hyphens: none;
+    -moz-hyphens: none;
+    -ms-hyphens: none;
+    hyphens: none;
+}
+@screen md {
+    .top-menu {
+        display: block !important;
+    }
+}
+@responsive {
+    .smt-14 {
+        scroll-margin-top: theme('spacing.14');
+    }
+    .smt-20 {
+        scroll-margin-top: theme('spacing.20');
+    }
+    .smt-32 {
+        scroll-margin-top: theme('spacing.32');
+    }
+}
+
+@tailwind utilities;
+/* purgecss end ignore */

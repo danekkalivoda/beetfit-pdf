@@ -1,0 +1,39 @@
+<div
+		x-data="{atTop: false}"
+		@scroll.window="atTop = document.getElementById('mainHeader').getBoundingClientRect().top >= 0 ? false : true"
+		id="top"
+>
+	<header class="px-2 md:px-8 fixed w-full z-20 transform transition ease-linear duration-100 pt-2 md:pt-6" :class="{ '-translate-y-2 md:-translate-y-6 shadow-xl bg-blue-600 bg-opacity-95' : atTop }">
+		<div class="container z-10 relative flex items-stretch py-2 mx-auto lg:py-1 md:items-center lg:px-8 xl:px-12">
+			<a href="#top" class="flex flex-grow md:flex-shrink-0 md:flex-grow-0 items-center py-2 text-sm font-medium text-white uppercase md:py-3 md:text-base xl:text-xl group focus:outline-none">
+				TLAPNET<span class="text-blue-300">.DEV</span>
+			</a>
+			<div x-data="{ open: false }" class="relative flex-shrink-0 self-end md:flex-1 order-2 md:order-1 pl-2">
+				<button @click="open = true" class="p-2 focus:outline-none hover:bg-blue-700 rounded transition duration-150 ease-in-out md:hidden" :class="{'bg-blue-700': open}">
+					<div class="relative flex w-6 h-6">
+						<img loading="lazy" src="https://obr.now.sh/remixicon/system/menu-line/64/ffffff" class="absolute w-6 h-6" :class="{ 'hidden': open }">
+						<img loading="lazy" src="https://obr.now.sh/remixicon/system/close-line/64/ffffff" class="absolute w-6 h-6" :class="{ 'hidden': !open }">
+					</div>
+					<span class="hidden">Open mobile menu</span>
+				</button>
+				<ul
+						x-show="open"
+						x-transition:enter="transition ease-out duration-150"
+						x-transition:enter-start="opacity-0 transform scale-75"
+						x-transition:enter-end="opacity-100 transform scale-100"
+						x-transition:leave="transition ease-in duration-150"
+						x-transition:leave-start="opacity-100 transform scale-100"
+						x-transition:leave-end="opacity-0 transform scale-75"
+						@click.away="open = false"
+						class="rounded absolute right-0 z-20 items-center w-40 py-4 md:py-2 px-2 mt-2 bg-blue-700 shadow-md transform origin-top-right md:mt-0 md:bg-transparent md:shadow-none md:relative md:flex md:flex-1 md:w-auto md:text-right top-menu"
+				>
+					<li class="md:inline-flex"><a href="#what" class="flex px-4 md:px-2 xl:px-4 py-2 rounded text-xs text-white hover:bg-blue-800 md:hover:bg-transparent md:rounded md:hover:text-white md:text-blue-200 md:text-sm transition duration-150 ease-out focus:outline-none">Co děláme</a></li>
+					<li class="md:inline-flex"><a href="#how" class="flex px-4 md:px-2 xl:px-4 py-2 rounded text-xs text-white hover:bg-blue-800 md:hover:bg-transparent md:rounded md:hover:text-white md:text-blue-200 md:text-sm transition duration-150 ease-out focus:outline-none">V čem děláme</a></li>
+					<li class="md:inline-flex"><a href="#dont" class="flex px-4 md:px-2 xl:px-4 py-2 rounded text-xs text-white hover:bg-blue-800 md:hover:bg-transparent md:rounded md:hover:text-white md:text-blue-200 md:text-sm transition duration-150 ease-out focus:outline-none">Co neděláme</a></li>
+					<li class="md:inline-flex"><a href="#where" class="flex px-4 md:px-2 xl:px-4 py-2 rounded text-xs text-white hover:bg-blue-800 md:hover:bg-transparent md:rounded md:hover:text-white md:text-blue-200 md:text-sm transition duration-150 ease-out focus:outline-none">Kde děláme</a></li>
+				</ul>
+			</div>
+			<a href="#contact" class="flex items-center text-sm px-4 py-2 text-white md:ml-4 bg-blue-700 rounded hover:bg-blue-900 transition duration-150 ease-out focus:outline-none order-1 font-semibold">Kontakt</a>
+		</div>
+	</header>
+</div>
