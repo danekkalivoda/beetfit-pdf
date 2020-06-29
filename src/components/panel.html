@@ -1,0 +1,15 @@
+<div class="bg-{{ color }}-100 relative z-0 px-4 py-3 mb-3">
+	<div class="flex items-start overflow-hidden">
+		<if condition="icon != ''">
+			<img src="https://obr.now.sh/fa/s/{{ icon }}/64/{{ iconColor }}" loading="lazy" class="w-6 h-6 mr-2 flex-shrink-0">
+		</if>
+		<div class="flex-1">
+			<if condition="header != ''">
+				<h2 class="font-semibold text-sm text-{{ color }}-800">{{ header }}</h2>
+			</if>
+			<div class="text-gray-800">
+				<content></content>
+			</div>
+		</div>
+	</div>
+</div>
