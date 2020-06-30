@@ -1,13 +1,25 @@
-<div class="bg-{{ color }}-100 relative z-0 px-4 py-3 mb-3">
-	<div class="flex items-start overflow-hidden">
+<div class="relative mb-2 overflow-hidden ">
+	<div class="w-6 h-6 bg-{{ color }}-200 transform rotate-45 translate-y-1/2 translate-x-1/2 absolute right-0 bottom-0 z-10"></div>
+	<if condition="panelStyle === 'hollow'">
+		<div class="border-{{ color }}-300 border absolute top-0 left-0 w-full h-full z-30"></div>
+	</if>
+	<else>
+		<div class="bg-{{ color }}-100 absolute top-0 left-0 w-full h-full z-0"></div>
+	</else>
+	<div class="flex items-start px-4 py-3 z-20 relative">
 		<if condition="icon != ''">
-			<img src="https://obr.now.sh/fa/s/{{ icon }}/64/{{ iconColor }}" loading="lazy" class="w-6 h-6 mr-2 flex-shrink-0">
+			<img src="https://obr.now.sh/{{ icon }}/64/{{ iconColor }}" loading="lazy" class="w-6 h-6 mr-4 flex-shrink-0">
 		</if>
 		<div class="flex-1">
-			<if condition="header != ''">
-				<h2 class="font-semibold text-sm text-{{ color }}-800">{{ header }}</h2>
-			</if>
-			<div class="text-gray-800">
+			<div class="flex justify-between items-center mb-1">
+				<if condition="header != ''">
+					<h2 class="font-semibold text-sm text-{{ color }}-700">{{ header }}</h2>
+				</if>
+				<if condition="kcal != ''">
+					<div class="rounded-full flex-shrink-0 bg-white text-{{ color }}-600 font-bold text-2xs px-2">{{ kcal }}</div>
+				</if>
+			</div>
+			<div class="text-2xs">
 				<content></content>
 			</div>
 		</div>
