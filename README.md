@@ -1,37 +1,27 @@
-# Tailwind CSS Parcel Starter Project [![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/) [![Dependabot Status](https://api.dependabot.com/badges/status?host=github&repo=SantiMA10/tailwindcss-parcel-starter)](https://dependabot.com)
-
-
-
-This is an example of a super simple [Tailwind CSS](https://tailwindcss.com) + [ParcelJS](https://parceljs.org) starter project.
-
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/SantiMA10/tailwindcss-parcel-starter)
-
+# Beetfit - pdf template
+Parcel, Tailwind CSS & PostHTML setup for generating static PDF templates.
 
 ## Get started
 
 Clone the project and install the dependencies:
 
 ```
-git clone https://github.com/SantiMA10/tailwindcss-parcel-starter
-yarn // or npm i
+git clone https://github.com/danekkalivoda/beetfit-pdf.git
+yarn
 ```
 
 After that, start up Parcel Development Server:
 
 ```
-yarn dev // or npm run dev
+yarn dev
 ```
 
-You can play around with `/index.html` to see the effects of your changes.
+You can style each pdf sheet in `/index.html`. HRM not working right now.
 
 ## Production bundle
 
 ```
-yarn prod //or npm run prod
+yarn prod
 ```
 
-After that you will have a ready to deploy bundle at `/dist`
-
-## Contributing
-
-Please report any issues. New features and ideas that you'd like to see implemented will be welcome, also feel free to send any pull requests.
+After that you will have a ready html templates at `/dist`
