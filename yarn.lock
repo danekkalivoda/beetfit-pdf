@@ -5202,9 +5202,9 @@ lodash.uniq@^4.5.0:
   integrity sha1-0CJTc662Uq3BvILklFM5qEJ1R3M=
 
 lodash@^4.17.11, lodash@^4.17.13, lodash@^4.17.15:
-  version "4.17.15"
-  resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.15.tgz#b447f6670a0455bbfeedd11392eff330ea097548"
-  integrity sha512-8xOcRHvCjnocdS5cpwXQXVzmmh5e5+saE2QGoeQmbKmRS6J3VQppPOIt0MnmE+4xlZoumy0GPG0D0MVIQbNA1A==
+  version "4.17.19"
+  resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.19.tgz#e48ddedbe30b3321783c5b4301fbd353bc1e4a4b"
+  integrity sha512-JNvd8XER9GQX0v2qJgsaN/mzFCNA5BRe/j8JN9d+tWyGLSodKQHKFicdwNYzWwI3wjRnaKPsGj1XkBjx/F96DQ==
 
 log-symbols@^3.0.0:
   version "3.0.0"
@@ -6513,7 +6513,7 @@ posthtml-each@^1.0.1:
     object-assign "^4.0.1"
     posthtml "^0.8.0"
 
-posthtml-expressions@^1.3.2, posthtml-expressions@^1.4.1, posthtml-expressions@^1.4.3:
+posthtml-expressions@^1.3.2, posthtml-expressions@^1.4.3:
   version "1.4.3"
   resolved "https://registry.yarnpkg.com/posthtml-expressions/-/posthtml-expressions-1.4.3.tgz#03fb71bfbf2515a7d24991a40c3c2c3427873ef6"
   integrity sha512-Q7VWNThumerTQh96kSdSbkhJDzK7mV5ZU+fxAOmHpe8MRsXNFZit+YccK+KhqTB6mZ6GkCo19uj1pVWswX2maA==
