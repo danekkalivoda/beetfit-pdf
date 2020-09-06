@@ -1,7 +1,7 @@
-<div class="flex flex-no-wrap justify-between items-center relative flex-1">
-	<div class="absolute border-t-2 border-gray-300 border-dotted h-0 w-full top-1/2 left-0 z-0"></div>
-	<div class="text-sm font-bold mr-6 bg-white pr-4 relative z-10 text-{{color}}-700">{{ title }}</div>
+<div class="relative flex flex-no-wrap items-center justify-between flex-1 overflow-hidden page-break-inside-avoid">
+    <div class="text-sm font-bold mr-6 pr-4 relative z-10 flex-shrink-0 text-{{color}}-700">{{ title }}</div>
+	<div class="relative flex-1 w-full h-0 border-t-2 border-gray-300 border-dotted"></div>
 	<if condition="subtitle != ''">
-		<div class="text-2xs  bg-white pl-4 relative z-10">{{ subtitle }}</div>
+		<div class="relative z-10 flex-shrink-0 pl-4 text-2xs">{{ subtitle }}</div>
 	</if>
 </div>

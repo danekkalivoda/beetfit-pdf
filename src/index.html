@@ -8,1338 +8,277 @@
 		<link href="./assets/css/styles.css" rel="stylesheet" />
 		<style>@page { size: A4 }</style>
 	</head>
-	<body class="A4 font-medium text-xs">
-		<!-- Denní plán -->
-		<section class="sheet flex flex-col text-gray-700">
-			<module
-					href="/components/header.html"
-					locals='{
-						"title": "Denní plán",
-						"subtitle": "4. 2. 2020"
-					}'
-			></module>
-			<div class="flex">
-				<div class="pl-6 pr-1 w-7/12">
-					<module
-						href="/components/panel.html"
-						locals='{
-								"header": "Snídaně",
-								"headerColor": "",
-								"kcal": "362 kcal",
-								"color": "blue",
-								"panelStyle": "",
-								"icon": "fa/s/utensils",
-								"panelStyle": "",
-								"iconColor": "2B6CB0"
-							}'
-					>
-						<div class="richtext">
-							<ul>
-								<li>Mugcake s jablky a skořicí</li>
-							</ul>
-						</div>
-					</module>
-					<module
-							href="/components/panel.html"
-							locals='{
-								"header": "Přesnídávka",
-								"headerColor": "",
-								"kcal": "362 kcal",
-								"color": "gray",
-								"panelStyle": "",
-								"icon": "fa/s/carrot",
-								"iconColor": "718096"
-							}'
-					>
-						<div class="richtext">
-							<ul>
-								<li>Grapefruit 100 g</li>
-							</ul>
-						</div>
-					</module>
-					<module
-							href="/components/panel.html"
-							locals='{
-								"header": "Oběd",
-								"headerColor": "",
-								"kcal": "362 kcal",
-								"color": "violet",
-								"panelStyle": "",
-								"icon": "fa/s/drumstick-bite",
-								"iconColor": "88395F"
-							}'
-					>
-						<div class="richtext">
-							<ul>
-								<li>Maso kuřecí prsa, bez kůže 200 g</li>
-								<li>Paprika zeleninová, zelená 70 g</li>
-								<li>Rajčata cherry 70 g</li>
-								<li>Brambory zimní, loupané, vařené v nesolené vodě 220 g</li>
-								<li>Olej řepkový, nízkoerukový 10 g Cibule 60 g</li>
-							</ul>
-						</div>
-					</module>
-					<module
-							href="/components/panel.html"
-							locals='{
-								"header": "Svačina",
-								"headerColor": "",
-								"kcal": "164 kcal",
-								"color": "gray",
-								"panelStyle": "",
-								"icon": "fa/s/apple-alt",
-								"iconColor": "718096"
-							}'
-					>
-						<div class="richtext">
-							<ul>
-								<li>Tvaroh polotučný 150 g</li>
-							</ul>
-						</div>
-					</module>
-					<module
-							href="/components/panel.html"
-							locals='{
-								"header": "Večeře",
-								"headerColor": "",
-								"kcal": "518 kcal",
-								"color": "teal",
-								"panelStyle": "",
-								"icon": "fa/s/fish",
-								"iconColor": "319795"
-							}'
-					>
-						<div class="richtext">
-							<ul>
-								<li>Salát z červené řepy se sýrem cottage</li>
-							</ul>
-						</div>
-					</module>
-					<module
-							href="/components/panel.html"
-							locals='{
-								"header": "Aktivity",
-								"headerColor": "",
-								"kcal": "362 kcal",
-								"color": "green",
-								"panelStyle": "",
-								"icon": "remix/map/run-fill",
-								"iconColor": "8E9229"
-							}'
-					>
-						<div class="richtext">
-							<ul>
-								<li>Maso kuřecí prsa, bez kůže 200 g</li>
-								<li>Paprika zeleninová, zelená 70 g</li>
-								<li>Rajčata cherry 70 g</li>
-								<li>Brambory zimní, loupané, vařené v nesolené vodě 220 g</li>
-								<li>Olej řepkový, nízkoerukový 10 g Cibule 60 g</li>
-							</ul>
-						</div>
-					</module>
-					<div class="flex justify-end w-full">
-						Celková energie: <strong class="text-bold text-violet-500">1592 kcal</strong>
-					</div>
-				</div>
-				<div class="w-5/12 pl-1 pr-6">
-					<module
-							href="/components/panel.html"
-							locals='{
-								"header": "Mikro a makro živiny",
-								"headerColor": "",
-								"kcal": "",
-								"color": "gray",
-								"panelStyle": "hollow",
-								"icon": "",
-								"iconColor": "2B6CB0"
-							}'
-					>
-						<div class="flex flex-no-wrap py-2 text-gray-600 bg-gray-100 text-3xs uppercase -mx-4 my-2">
-							<div class="w-2/3 font-bold pl-4 pr-1">Název</div>
-							<div class="w-1/3 font-bold pr-4 pl-1">Hodnota</div>
-						</div>
-						<div class="flex flex-no-wrap py-1 -mx-4">
-							<div class="w-2/3 pl-4 pr-1">Voda</div>
-							<div class="w-1/3 font-bold pr-4 pl-1">1077 ml</div>
-						</div>
-						<div class="flex flex-no-wrap py-1 -mx-4">
-							<div class="w-2/3 pl-4 pr-1">Sacharidy</div>
-							<div class="w-1/3 font-bold pr-4 pl-1">185 g</div>
-						</div>
-						<div class="flex flex-no-wrap py-1 -mx-4">
-							<div class="w-2/3 pl-8 pr-1">z toho cukry</div>
-							<div class="w-1/3 font-bold pr-4 pl-1">24 g</div>
-						</div>
-						<div class="flex flex-no-wrap py-1 -mx-4">
-							<div class="w-2/3 pl-4 pr-1">Vláknina</div>
-							<div class="w-1/3 font-bold pr-4 pl-1">42 g</div>
-						</div>
-						<div class="flex flex-no-wrap py-1 -mx-4">
-							<div class="w-2/3 pl-4 pr-1">Tuky</div>
-							<div class="w-1/3 font-bold pr-4 pl-1">42 g</div>
-						</div>
-						<div class="flex flex-no-wrap py-1 -mx-4">
-							<div class="w-2/3 pl-8 pr-1">z toho nasycené</div>
-							<div class="w-1/3 font-bold pr-4 pl-1">19 g</div>
-						</div>
-						<div class="flex flex-no-wrap py-1 -mx-4">
-							<div class="w-2/3 pl-8 pr-1">z toho nenasycené</div>
-							<div class="w-1/3 font-bold pr-4 pl-1">0 g</div>
-						</div>
-						<div class="flex flex-no-wrap py-1 -mx-4">
-							<div class="w-2/3 pl-8 pr-1">Mononenasycené mastné kyseliny</div>
-							<div class="w-1/3 font-bold pr-4 pl-1">24 g</div>
-						</div>
-						<div class="flex flex-no-wrap py-1 -mx-4">
-							<div class="w-2/3 pl-8 pr-1">Polynenasycené mastné kyseliny</div>
-							<div class="w-1/3 font-bold pr-4 pl-1">24 g</div>
-						</div>
-						<div class="flex flex-no-wrap py-1 -mx-4">
-							<div class="w-2/3 pl-8 pr-1">Trans- mastné kyseliny</div>
-							<div class="w-1/3 font-bold pr-4 pl-1">24 g</div>
-						</div>
-						<div class="flex flex-no-wrap py-1 -mx-4">
-							<div class="w-2/3 pl-8 pr-1">Cholesterol</div>
-							<div class="w-1/3 font-bold pr-4 pl-1">24 g</div>
-						</div>
-						<div class="flex flex-no-wrap py-1 -mx-4">
-							<div class="w-2/3 pl-4 pr-1">Bílkoviny</div>
-							<div class="w-1/3 font-bold pr-4 pl-1">110 g</div>
-						</div>
-					</module>
-				</div>
-			</div>
-			<module href="/components/footer.html"></module>
-		</section>
-		<!-- Profil -->
-		<section class="sheet flex flex-col text-gray-700">
-			<module
-					href="/components/header.html"
-					locals='{
-						"title": "Profil klienta",
-						"subtitle": ""
-					}'
-			></module>
-			<div class="flex w-full items-stretch">
-				<div class="pl-6 pr-1 w-7/12 flex items-stretch">
-					<module
-							href="/components/panel.html"
-							locals='{
-								"header": "",
-								"headerColor": "",
-								"kcal": "",
-								"color": "green",
-								"panelStyle": "",
-								"icon": "",
-								"panelStyle": "",
-								"iconColor": ""
-							}'
-					>
-						<div class="flex items-start flex-no-wrap">
-							<div class="flex-shrink-0 pr-3 py-1 w-1/3">
-								<img src="https://avatarless.now.sh/gi/danek.kalivoda@gmail.com?t=DK&s=512" alt="Daniel Kalivoda" class="w-full">
-							</div>
-							<div class="flex-1 w-2/3 pl-1">
-								<h2 class="font-semibold text-sm text-green-700 mb-2">Osobní údaje</h2>
-								<div class="flex flex-no-wrap mt-2">
-									<div class="w-1/3 pr-1">Jméno</div>
-									<div class="w-2/3 pl-1 font-bold">Daniel Kalivoda</div>
-								</div>
-								<div class="flex flex-no-wrap mt-2">
-									<div class="w-1/3 pr-1">Pohlaví</div>
-									<div class="w-2/3 pl-1 font-bold">Muž</div>
-								</div>
-								<div class="flex flex-no-wrap mt-2">
-									<div class="w-1/3 pr-1">Datum narození</div>
-									<div class="w-2/3 pl-1 font-bold">18. 11. 1983</div>
-								</div>
-								<div class="flex flex-no-wrap mt-2">
-									<div class="w-1/3 pr-1">Věk</div>
-									<div class="w-2/3 pl-1 font-bold">36</div>
-								</div>
-							</div>
-						</div>
-					</module>
-				</div>
-				<div class="w-5/12 pl-1 pr-6 flex items-stretch">
-					<module
-							href="/components/panel.html"
-							locals='{
-								"header": "Kontaktní údaje",
-								"headerColor": "",
-								"kcal": "",
-								"color": "violet",
-								"panelStyle": "",
-								"icon": "",
-								"panelStyle": "",
-								"iconColor": ""
-							}'
-					>
-						<div class="flex flex-no-wrap mt-2">
-							<div class="w-1/3 pr-1">Telefon</div>
-							<div class="w-2/3 pl-1 font-bold">775070605</div>
-						</div>
-						<div class="flex flex-no-wrap mt-2">
-							<div class="w-1/3 pr-1">E-mail</div>
-							<div class="w-2/3 pl-1 font-bold">danek.kalivoda@gmail.com</div>
-						</div>
-						<div class="flex flex-no-wrap mt-2">
-							<div class="w-1/3 pr-1">Adresa</div>
-							<div class="w-2/3 pl-1 font-bold">Štefánikova 296, Lázně Bohdaneč, 533 41, CZ</div>
-						</div>
-				</div>
-			</div>
-			<div class="flex w-full items-stretch">
-				<div class="pl-6 pr-1 w-7/12 flex items-stretch">
-					<module
-							href="/components/panel.html"
-							locals='{
-								"header": "Anamneza",
-								"headerColor": "",
-								"kcal": "",
-								"color": "blue",
-								"panelStyle": "",
-								"icon": "",
-								"panelStyle": "",
-								"iconColor": ""
-							}'
-					>
-						<div class="flex flex-no-wrap">
-							<div class="flex-1 w-1/3 pr-1">
-								<div class="flex flex-no-wrap mt-2">
-									<div class="w-1/2 pr-1">Výška</div>
-									<div class="w-1/2 pl-1 font-bold">192</div>
-								</div>
-								<div class="flex flex-no-wrap mt-2">
-									<div class="w-1/2 pr-1">Váha</div>
-									<div class="w-1/2 pl-1 font-bold">89.5 kg</div>
-								</div>
-								<div class="flex flex-no-wrap mt-2">
-									<div class="w-1/2 pr-1">BMI</div>
-									<div class="w-1/2 pl-1 font-bold">24.3</div>
-								</div>
-								<div class="flex flex-no-wrap mt-2">
-									<div class="w-1/2 pr-1">WHR</div>
-									<div class="w-1/2 pl-1 font-bold">-</div>
-								</div>
-								<div class="flex flex-no-wrap mt-2">
-									<div class="w-1/2 pr-1">BMR</div>
-									<div class="w-1/2 pl-1 font-bold">12932</div>
-								</div>
-							</div>
-							<div class="flex-1 w-1/3 pl-1">
-								<div class="flex flex-no-wrap mt-2">
-									<div class="w-2/3">Hypolipidemická léčba</div>
-									<div class="w-1/3 font-bold">Ne</div>
-								</div>
-								<div class="flex flex-no-wrap mt-2">
-									<div class="w-2/3">Antihypertenzní léčba</div>
-									<div class="w-1/3 font-bold">Ne</div>
-								</div>
-								<div class="flex flex-no-wrap mt-2">
-									<div class="w-2/3">PGT</div>
-									<div class="w-1/3 font-bold">Ne</div>
-								</div>
-								<div class="flex flex-no-wrap mt-2">
-									<div class="w-2/3">DM2</div>
-									<div class="w-1/3 font-bold">Ne</div>
-								</div>
-							</div>
-						</div>
-					</module>
-				</div>
-				<div class="w-5/12 pl-1 pr-6 flex items-stretch">
-					<module
-							href="/components/panel.html"
-							locals='{
-								"header": "Stravování",
-								"headerColor": "",
-								"kcal": "",
-								"color": "teal",
-								"panelStyle": "",
-								"icon": "",
-								"panelStyle": "",
-								"iconColor": ""
-							}'
-					>
-						<div class="flex flex-no-wrap mt-2">
-							<div class="w-1/2 pr-1">BMR</div>
-							<div class="w-1/2 pl-1 font-bold">1700 kcal</div>
-						</div>
-						<div class="flex flex-no-wrap mt-2">
-							<div class="w-1/2 pr-1 ">Tolerance BMR</div>
-							<div class="w-1/2 pl-1 font-bold">10 %</div>
-						</div>
-						<div class="flex flex-no-wrap mt-2">
-							<div class="w-1/2 pr-1 ">Denní příjem tekutin</div>
-							<div class="w-1/2 pl-1 font-bold">2000 ml</div>
-						</div>
-						<div class="flex flex-no-wrap mt-2">
-							<div class="w-1/2 pr-1 ">Poměr bílkovin</div>
-							<div class="w-1/2 pl-1 font-bold">30 %</div>
-						</div>
-						<div class="flex flex-no-wrap mt-2">
-							<div class="w-1/2 pr-1 ">Poměr bílkovin</div>
-							<div class="w-1/2 pl-1 font-bold">30 %</div>
-						</div>
-					</module>
-				</div>
-			</div>
-			<div class="flex w-full px-6">
-				<module
-						href="/components/panel.html"
-						locals='{
-								"header": "",
-								"headerColor": "",
-								"kcal": "",
-								"color": "gray",
-								"panelStyle": "",
-								"icon": "",
-								"panelStyle": "",
-								"iconColor": ""
-							}'
-				>
-					<h2 class="font-semibold text-sm text-gray-700">Alergie</h2>
-					<div class="w-full mb-4">
-						OBILOVINY OBSAHUJÍCÍ LEPEK, RYBY a výrobky z nich, SÓJOVÉ BOBY(sója), CELER
-					</div>
-					<h2 class="font-semibold text-sm text-gray-700">Ostatní alergie</h2>
-					<div class="w-full mb-4">
-						pyl, prach
-					</div>
-					<h2 class="font-semibold text-sm text-gray-700">Osobní anamnéza</h2>
-					<div class="w-full mb-4">
-						v 15 letech prodělala mononukleózu, jinak zdráva, děti -1
-					</div>
-					<h2 class="font-semibold text-sm text-gray-700">Rodinná anamnéza</h2>
-					<div class="w-full mb-4">
-						otec - IM - 2015, matka - DM
-					</div>
-					<h2 class="font-semibold text-sm text-gray-700">Aktivita</h2>
-					<div class="w-full">
-						MÍRNĚ AKTIVNÍ - aktivnější člověk, který se rád hýbe a cvičí 3-5x týdně
-					</div>
-				</module>
-			</div>
-			<div class="flex w-full px-6">
-				<module
-						href="/components/panel.html"
-						locals='{
-								"header": "Měření",
-								"headerColor": "green",
-								"kcal": "",
-								"color": "gray",
-								"panelStyle": "hollow",
-								"icon": "",
-								"iconColor": ""
-							}'
-				>
-					<div class="flex w-full items-start">
-						<div class="w-1/3">
-							<h3 class="font-bold mb-1">Hmotnost</h3>
-							<div class="flex w-full text-3xs mb-1">
-								<div class="w-1/2">1. 8. 2016</div>
-								<div class="w-1/2 font-bold">85 kg</div>
-							</div>
-							<div class="flex w-full text-3xs mb-1">
-								<div class="w-1/2">1. 12. 2016</div>
-								<div class="w-1/2 font-bold">80 kg</div>
-							</div>
-							<div class="flex w-full text-3xs mb-1">
-								<div class="w-1/2">8. 3. 2017</div>
-								<div class="w-1/2 font-bold">79 kg</div>
-							</div>
-							<div class="flex w-full text-3xs mb-1">
-								<div class="w-1/2">28. 3. 2017</div>
-								<div class="w-1/2 font-bold">75 kg</div>
-							</div>
-							<div class="flex w-full text-3xs mb-1">
-								<div class="w-1/2">17. 5. 2017</div>
-								<div class="w-1/2 font-bold">69 kg</div>
-							</div>
-							<div class="flex w-full text-3xs mb-1">
-								<div class="w-1/2">20. 7. 2017</div>
-								<div class="w-1/2 font-bold">65 kg</div>
-							</div>
-						</div>
-						<div class="w-1/3">
-							<h3 class="font-bold mb-1">Obvod boku</h3>
-							<div class="flex w-full text-3xs mb-1">
-								<div class="w-1/2">1. 8. 2016</div>
-								<div class="w-1/2 font-bold">110 cm</div>
-							</div>
-							<div class="flex w-full text-3xs mb-1">
-								<div class="w-1/2">4. 8. 2017</div>
-								<div class="w-1/2 font-bold">89 cm</div>
-							</div>
-							<div class="flex w-full text-3xs mb-1">
-								<div class="w-1/2">28. 8. 2017</div>
-								<div class="w-1/2 font-bold">89 kg</div>
-							</div>
-							<div class="flex w-full text-3xs mb-1">
-								<div class="w-1/2">18. 9. 2018</div>
-								<div class="w-1/2 font-bold">90 cm</div>
-							</div>
-						</div>
-						<div class="w-1/3">
-							<h3 class="font-bold mb-1">Tělesný tuk</h3>
-							<div class="flex w-full text-3xs mb-1">
-								<div class="w-1/2">30. 9. 2017</div>
-								<div class="w-1/2 font-bold">36 %</div>
-							</div>
-							<div class="flex w-full text-3xs mb-1">
-								<div class="w-1/2">21. 2. 2018</div>
-								<div class="w-1/2 font-bold">32%</div>
-							</div>
-						</div>
-					</div>
-				</module>
-			</div>
-			<module href="/components/footer.html"></module>
-		</section>
-		<section class="sheet flex flex-col text-gray-700">
-			<module
-					href="/components/header.html"
-					locals='{
-						"title": "Profil klienta",
-						"subtitle": ""
-					}'
-			></module>
-			<div class="flex w-full px-6">
-				<module
-						href="/components/panel.html"
-						locals='{
-								"header": "Záznam",
-								"headerColor": "violet",
-								"kcal": "",
-								"color": "gray",
-								"panelStyle": "hollow",
-								"icon": "",
-								"iconColor": ""
-							}'
-				>
-					<div class="w-full flex items-center mb-1">
-						<h3 class="font-bold">28. 5. 2020</h3>
-						<span class="bg-gray-200 rounded-full px-2 inline-block leading-4 ml-2 text-3xs text-gray-600 font-bold">2 500 Kč</span>
-					</div>
-					<div class="mb-4">
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam aliquet consectetur aliquam. Etiam sed metus at metus elementum aliquet.
-						Phasellus auctor urna in ultricies vehicula.
-					</div>
-					<div class="w-full flex items-center mb-1">
-						<h3 class="font-bold">28. 5. 2020</h3>
-					</div>
-					<div class="mb-4">
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam aliquet consectetur aliquam. Etiam sed metus at metus elementum aliquet.
-						Phasellus auctor urna in ultricies vehicula.
-					</div>
-					<div class="w-full flex items-center mb-1">
-						<h3 class="font-bold">28. 5. 2020</h3>
-					</div>
-					<div>
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam aliquet consectetur aliquam. Etiam sed metus at metus elementum aliquet.
-						Phasellus auctor urna in ultricies vehicula.
-					</div>
-				</module>
-			</div>
-			<module href="/components/footer.html"></module>
-		</section>
-		<!-- Recepty -->
-		<section class="sheet flex flex-col text-gray-700">
-			<module
-					href="/components/header.html"
-					locals='{
-						"title": "Recepty",
-						"subtitle": "28. 6. 2020"
-					}'
-			></module>
-
-			<div class="flex w-full px-10 mb-2">
-				<module
-						href="/components/dottedHeader.html"
-						locals='{
-									"title": "Ovesná kaše s hruškou",
-									"subtitle": "Snídaně",
-									"color": "gray"
-								}'
-				></module>
-			</div>
-			<div class="flex w-full px-6">
-				<div class="w-2/12">
-					<img src="https://cdn.beetfit.com/imgs/vgMSWoUXWHq6C0oFR1c7NtgOCn9fNxfLkiplhgm/300x175/8/2017-09-12/2bda68307d1cb3f25be4d2d0ad4d757f3766ad4b.png" alt="" class="w-full">
-				</div>
-				<div class="w-5/12 pl-2">
-					<module
-						href="/components/panel.html"
-						locals='{
-								"header": "Příprava",
-								"headerColor": "",
-								"kcal": "",
-								"color": "green",
-								"panelStyle": "",
-								"icon": "",
-								"iconColor": ""
-							}'
-				>
-						<div class="w-full">
-							V hrnci smícháme ovesné vločky a mléko (případně vodu či kombinaci mléka a vody) a špetku soli. Přivedeme k varu a pomalu vaříme 5 minut. Občas kaši promícháme. Semínka a mandle či směs oříšků můžeme opražit na sucho na pánvi nebo nechat, tak jak jsou. Půlku hrušky nakrájíme na plátky a společně se semínky, 3 lžícemi jogurtu zamícháme do kaše. Můžeme přidat i lžičku medu na doslazení.
-						</div>
-						<div class="flex flex-no-wrap py-1 mt-2">
-							<div class="w-1/3 pr-1">Doba přípravy</div>
-							<div class="w-2/3 font-bold pl-1">30 minut</div>
-						</div>
-						<div class="flex flex-no-wrap py-1">
-							<div class="w-1/3 pr-1">Porcí</div>
-							<div class="w-2/3 font-bold pl-1">4</div>
-						</div>
-				</module>
-				</div>
-				<div class="w-3/12 pl-2">
-					<module
-							href="/components/panel.html"
-							locals='{
-								"header": "Ingredience",
-								"headerColor": "",
-								"kcal": "",
-								"color": "violet",
-								"panelStyle": "",
-								"icon": "",
-								"iconColor": ""
-							}'
-					>
-						<div class="text-3xs">
-							<div class="flex flex-no-wrap py-2 text-violet-600 bg-violet-200 bg-opacity-25 uppercase -mx-4 my-2">
-								<div class="w-2/3 font-bold pl-4 pr-1">Název</div>
-								<div class="w-1/3 font-bold pr-4 pl-1">Hodnota</div>
-							</div>
-							<div class="flex flex-no-wrap py-1 -mx-4">
-								<div class="w-2/3 pl-4 pr-1">Čočka červená</div>
-								<div class="w-1/3 font-bold pr-4 pl-1">200 g</div>
-							</div>
-							<div class="flex flex-no-wrap py-1 -mx-4">
-								<div class="w-2/3 pl-4 pr-1">Mrkev</div>
-								<div class="w-1/3 font-bold pr-4 pl-1">50 g</div>
-							</div>
-							<div class="flex flex-no-wrap py-1 -mx-4">
-								<div class="w-2/3 pl-4 pr-1">Cibule</div>
-								<div class="w-1/3 font-bold pr-4 pl-1">50 g</div>
-							</div>
-							<div class="flex flex-no-wrap py-1 -mx-4">
-								<div class="w-2/3 pl-4 pr-1">Olivový olej</div>
-								<div class="w-1/3 font-bold pr-4 pl-1">15 g</div>
-							</div>
-							<div class="flex flex-no-wrap py-1 -mx-4">
-								<div class="w-2/3 pl-4 pr-1">Hořčice plnotučná</div>
-								<div class="w-1/3 font-bold pr-4 pl-1">10 g</div>
-							</div>
-							<div class="flex flex-no-wrap py-1 -mx-4">
-								<div class="w-2/3 pl-4 pr-1">Česnek</div>
-								<div class="w-1/3 font-bold pr-4 pl-1">5 g</div>
-							</div>
-							<div class="flex flex-no-wrap py-1 -mx-4">
-								<div class="w-2/3 pl-4 pr-1">Sůl kuchyňská</div>
-								<div class="w-1/3 font-bold pr-4 pl-1">1 g</div>
-							</div>
-						</div>
-					</module>
-				</div>
-				<div class="w-2/12 pl-2">
-					<module
-							href="/components/panel.html"
-							locals='{
-								"header": "",
-								"headerColor": "",
-								"kcal": "",
-								"color": "gray",
-								"panelStyle": "hollow",
-								"icon": "",
-								"iconColor": ""
-							}'
-					>
-						<h3 class="text-green-500 text-3xs mb-1">Sacharidy 65.84 %</h3>
-						<module
-								href="/components/progressBar.html"
-								locals='{
-									"color": "green",
-									"percentage": "66%"
-								}'
-						>
-						</module>
-						<h3 class="text-blue-500 text-3xs mb-1 mt-3">Bílkoviny 25.11%</h3>
-						<module
-								href="/components/progressBar.html"
-								locals='{
-								"color": "blue",
-								"percentage": "25%"
-							}'
-						>
-						</module>
-						<h3 class="text-orange-500 text-3xs mb-1 mt-3">Tuky 9.06 %</h3>
-						<module
-								href="/components/progressBar.html"
-								locals='{
-								"color": "orange",
-								"percentage": "9%"
-							}'
-						>
-						</module>
-					</module>
-				</div>
-			</div>
-
-			<div class="flex w-full px-10 mb-2">
-				<module
-						href="/components/dottedHeader.html"
-						locals='{
-									"title": "Steak z tuňáka grilovaný",
-									"subtitle": "Oběd",
-									"color": "gray"
-								}'
-				></module>
-			</div>
-			<div class="flex w-full px-6">
-				<div class="w-2/12">
-					<img src="https://cdn.beetfit.com/imgs/vgMSWoUXWHq6C0oFR1c7NtgOCn9fNxfLkiplhgm/300x175/8/2017-09-12/2bda68307d1cb3f25be4d2d0ad4d757f3766ad4b.png" alt="" class="w-full">
-				</div>
-				<div class="w-5/12 pl-2">
-					<module
-							href="/components/panel.html"
-							locals='{
-								"header": "Příprava",
-								"headerColor": "",
-								"kcal": "",
-								"color": "green",
-								"panelStyle": "",
-								"icon": "",
-								"iconColor": ""
-							}'
-					>
-						<div class="w-full">
-							V hrnci smícháme ovesné vločky a mléko (případně vodu či kombinaci mléka a vody) a špetku soli. Přivedeme k varu a pomalu vaříme 5 minut. Občas kaši promícháme. Semínka a mandle či směs oříšků můžeme opražit na sucho na pánvi nebo nechat, tak jak jsou. Půlku hrušky nakrájíme na plátky a společně se semínky, 3 lžícemi jogurtu zamícháme do kaše. Můžeme přidat i lžičku medu na doslazení.
-						</div>
-						<div class="flex flex-no-wrap py-1 mt-2">
-							<div class="w-1/3 pr-1">Doba přípravy</div>
-							<div class="w-2/3 font-bold pl-1">30 minut</div>
-						</div>
-						<div class="flex flex-no-wrap py-1">
-							<div class="w-1/3 pr-1">Porcí</div>
-							<div class="w-2/3 font-bold pl-1">4</div>
-						</div>
-					</module>
-				</div>
-				<div class="w-3/12 pl-2">
-					<module
-							href="/components/panel.html"
-							locals='{
-								"header": "Ingredience",
-								"headerColor": "",
-								"kcal": "",
-								"color": "violet",
-								"panelStyle": "",
-								"icon": "",
-								"iconColor": ""
-							}'
-					>
-						<div class="text-3xs">
-							<div class="flex flex-no-wrap py-2 text-violet-600 bg-violet-200 bg-opacity-25 uppercase -mx-4 my-2">
-								<div class="w-2/3 font-bold pl-4 pr-1">Název</div>
-								<div class="w-1/3 font-bold pr-4 pl-1">Hodnota</div>
-							</div>
-							<div class="flex flex-no-wrap py-1 -mx-4">
-								<div class="w-2/3 pl-4 pr-1">Čočka červená</div>
-								<div class="w-1/3 font-bold pr-4 pl-1">200 g</div>
-							</div>
-							<div class="flex flex-no-wrap py-1 -mx-4">
-								<div class="w-2/3 pl-4 pr-1">Mrkev</div>
-								<div class="w-1/3 font-bold pr-4 pl-1">50 g</div>
-							</div>
-							<div class="flex flex-no-wrap py-1 -mx-4">
-								<div class="w-2/3 pl-4 pr-1">Cibule</div>
-								<div class="w-1/3 font-bold pr-4 pl-1">50 g</div>
-							</div>
-							<div class="flex flex-no-wrap py-1 -mx-4">
-								<div class="w-2/3 pl-4 pr-1">Olivový olej</div>
-								<div class="w-1/3 font-bold pr-4 pl-1">15 g</div>
-							</div>
-							<div class="flex flex-no-wrap py-1 -mx-4">
-								<div class="w-2/3 pl-4 pr-1">Hořčice plnotučná</div>
-								<div class="w-1/3 font-bold pr-4 pl-1">10 g</div>
-							</div>
-							<div class="flex flex-no-wrap py-1 -mx-4">
-								<div class="w-2/3 pl-4 pr-1">Česnek</div>
-								<div class="w-1/3 font-bold pr-4 pl-1">5 g</div>
-							</div>
-							<div class="flex flex-no-wrap py-1 -mx-4">
-								<div class="w-2/3 pl-4 pr-1">Sůl kuchyňská</div>
-								<div class="w-1/3 font-bold pr-4 pl-1">1 g</div>
-							</div>
-						</div>
-					</module>
-				</div>
-				<div class="w-2/12 pl-2">
-					<module
-							href="/components/panel.html"
-							locals='{
-								"header": "",
-								"headerColor": "",
-								"kcal": "",
-								"color": "gray",
-								"panelStyle": "hollow",
-								"icon": "",
-								"iconColor": ""
-							}'
-					>
-						<h3 class="text-green-500 text-3xs mb-1">Sacharidy 65.84 %</h3>
-						<module
-								href="/components/progressBar.html"
-								locals='{
-									"color": "green",
-									"percentage": "66%"
-								}'
-						>
-						</module>
-						<h3 class="text-blue-500 text-3xs mb-1 mt-3">Bílkoviny 25.11%</h3>
-						<module
-								href="/components/progressBar.html"
-								locals='{
-								"color": "blue",
-								"percentage": "25%"
-							}'
-						>
-						</module>
-						<h3 class="text-orange-500 text-3xs mb-1 mt-3">Tuky 9.06 %</h3>
-						<module
-								href="/components/progressBar.html"
-								locals='{
-								"color": "orange",
-								"percentage": "9%"
-							}'
-						>
-						</module>
-					</module>
-				</div>
-			</div>
-
-			<div class="flex w-full px-10 mb-2">
-				<module
-						href="/components/dottedHeader.html"
-						locals='{
-									"title": "Steak z tuňáka grilovaný",
-									"subtitle": "Večeře",
-									"color": "gray"
-								}'
-				></module>
-			</div>
-			<div class="flex w-full px-6">
-				<div class="w-7/12">
-					<module
-							href="/components/panel.html"
-							locals='{
-								"header": "Příprava",
-								"headerColor": "",
-								"kcal": "",
-								"color": "green",
-								"panelStyle": "",
-								"icon": "",
-								"iconColor": ""
-							}'
-					>
-						<div class="w-full">
-							V hrnci smícháme ovesné vločky a mléko (případně vodu či kombinaci mléka a vody) a špetku soli. Přivedeme k varu a pomalu vaříme 5 minut. Občas kaši promícháme. Semínka a mandle či směs oříšků můžeme opražit na sucho na pánvi nebo nechat, tak jak jsou. Půlku hrušky nakrájíme na plátky a společně se semínky, 3 lžícemi jogurtu zamícháme do kaše. Můžeme přidat i lžičku medu na doslazení.
-						</div>
-						<div class="flex flex-no-wrap py-1 mt-2">
-							<div class="w-1/3 pr-1">Doba přípravy</div>
-							<div class="w-2/3 font-bold pl-1">30 minut</div>
-						</div>
-						<div class="flex flex-no-wrap py-1">
-							<div class="w-1/3 pr-1">Porcí</div>
-							<div class="w-2/3 font-bold pl-1">4</div>
-						</div>
-					</module>
-				</div>
-				<div class="w-3/12 pl-2">
-					<module
-							href="/components/panel.html"
-							locals='{
-								"header": "Ingredience",
-								"headerColor": "",
-								"kcal": "",
-								"color": "violet",
-								"panelStyle": "",
-								"icon": "",
-								"iconColor": ""
-							}'
-					>
-						<div class="text-3xs">
-							<div class="flex flex-no-wrap py-2 text-violet-600 bg-violet-200 bg-opacity-25 uppercase -mx-4 my-2">
-								<div class="w-2/3 font-bold pl-4 pr-1">Název</div>
-								<div class="w-1/3 font-bold pr-4 pl-1">Hodnota</div>
-							</div>
-							<div class="flex flex-no-wrap py-1 -mx-4">
-								<div class="w-2/3 pl-4 pr-1">Čočka červená</div>
-								<div class="w-1/3 font-bold pr-4 pl-1">200 g</div>
-							</div>
-							<div class="flex flex-no-wrap py-1 -mx-4">
-								<div class="w-2/3 pl-4 pr-1">Mrkev</div>
-								<div class="w-1/3 font-bold pr-4 pl-1">50 g</div>
-							</div>
-							<div class="flex flex-no-wrap py-1 -mx-4">
-								<div class="w-2/3 pl-4 pr-1">Cibule</div>
-								<div class="w-1/3 font-bold pr-4 pl-1">50 g</div>
-							</div>
-							<div class="flex flex-no-wrap py-1 -mx-4">
-								<div class="w-2/3 pl-4 pr-1">Olivový olej</div>
-								<div class="w-1/3 font-bold pr-4 pl-1">15 g</div>
-							</div>
-							<div class="flex flex-no-wrap py-1 -mx-4">
-								<div class="w-2/3 pl-4 pr-1">Hořčice plnotučná</div>
-								<div class="w-1/3 font-bold pr-4 pl-1">10 g</div>
-							</div>
-							<div class="flex flex-no-wrap py-1 -mx-4">
-								<div class="w-2/3 pl-4 pr-1">Česnek</div>
-								<div class="w-1/3 font-bold pr-4 pl-1">5 g</div>
-							</div>
-							<div class="flex flex-no-wrap py-1 -mx-4">
-								<div class="w-2/3 pl-4 pr-1">Sůl kuchyňská</div>
-								<div class="w-1/3 font-bold pr-4 pl-1">1 g</div>
-							</div>
-						</div>
-					</module>
-				</div>
-				<div class="w-2/12 pl-2">
-					<module
-							href="/components/panel.html"
-							locals='{
-								"header": "",
-								"headerColor": "",
-								"kcal": "",
-								"color": "gray",
-								"panelStyle": "hollow",
-								"icon": "",
-								"iconColor": ""
-							}'
-					>
-						<h3 class="text-green-500 text-3xs mb-1">Sacharidy 65.84 %</h3>
-						<module
-								href="/components/progressBar.html"
-								locals='{
-									"color": "green",
-									"percentage": "66%"
-								}'
-						>
-						</module>
-						<h3 class="text-blue-500 text-3xs mb-1 mt-3">Bílkoviny 25.11%</h3>
-						<module
-								href="/components/progressBar.html"
-								locals='{
-								"color": "blue",
-								"percentage": "25%"
-							}'
-						>
-						</module>
-						<h3 class="text-orange-500 text-3xs mb-1 mt-3">Tuky 9.06 %</h3>
-						<module
-								href="/components/progressBar.html"
-								locals='{
-								"color": "orange",
-								"percentage": "9%"
-							}'
-						>
-						</module>
-					</module>
-				</div>
-			</div>
-
-			<module href="/components/footer.html"></module>
-		</section>
-		<!-- Nákupní seznam -->
-		<section class="sheet flex flex-col text-gray-700">
-			<module
-					href="/components/header.html"
-					locals='{
-						"title": "Nákupní seznam",
-						"subtitle": "29. 6. 2020 - 5. 7. 2020"
-					}'
-			></module>
-			<div class="flex flex-wrap px-3">
-				<div class="px-3 w-6/12">
-					<div class="px-4 pb-6">
-						<module
-								href="/components/dottedHeader.html"
-								locals='{
-									"title": "Brambory, luštěniny, houby",
-									"subtitle": "",
-									"color": "green"
-								}'
-						></module>
-							<module
-									href="/components/checklistItem.html"
-									locals='{
-										"multiply": "2x",
-										"text": "Tofu lahůdka klasik"
-									}'
-							></module>
-							<module
-									href="/components/checklistItem.html"
-									locals='{
-										"multiply": "1x",
-										"text": "Bonduelle vapeur červené fazole"
-									}'
-							></module>
-							<module
-									href="/components/checklistItem.html"
-									locals='{
-											"multiply": "2x",
-											"text": "bramborová kaše s mlékem a máslem"
-										}'
-							></module>
-							<module
-									href="/components/checklistItem.html"
-									locals='{
-												"multiply": "5x",
-												"text": "Cizrna v konzervě"
-											}'
-							></module>
-					</div>
-				</div>
-
-				<div class="px-3 w-6/12">
-					<div class="px-4 pb-6">
-						<module
-								href="/components/dottedHeader.html"
-								locals='{
-									"title": "Hotové pokrmy, polotovary",
-									"subtitle": "",
-									"color": "purple"
-								}'
-						></module>
-						<module
-								href="/components/checklistItem.html"
-								locals='{
-										"multiply": "2x",
-										"text": "Albert krevety vařené loupané solené bez hlavy (JNO)"
-									}'
-						></module>
-						<module
-								href="/components/checklistItem.html"
-								locals='{
-										"multiply": "1x",
-										"text": "Asijské krůtí nudličky Aramark"
-									}'
-						></module>
-						<module
-								href="/components/checklistItem.html"
-								locals='{
-											"multiply": "2x",
-											"text": "Bohatá polévka s fazolemi Albert Fresh Bistro"
-										}'
-						></module>
-						<module
-								href="/components/checklistItem.html"
-								locals='{
-											"multiply": "2x",
-											"text": "Bolognese omáčka albert"
-										}'
-						></module>
-						<module
-								href="/components/checklistItem.html"
-								locals='{
-											"multiply": "2x",
-											"text": "Bramborové noky s vepřovou panenkou, smetanovo-hříbkovou omáčkou"
-										}'
-						></module>
-					</div>
-				</div>
-
-				<div class="px-3 w-6/12">
-					<div class="px-4 pb-6">
-						<module
-								href="/components/dottedHeader.html"
-								locals='{
-									"title": "Chléb, pečivo",
-									"subtitle": "",
-									"color": "violet"
-								}'
-						></module>
-						<module
-								href="/components/checklistItem.html"
-								locals='{
-										"multiply": "2x",
-										"text": "7 days croissant caramel"
-									}'
-						></module>
-						<module
-								href="/components/checklistItem.html"
-								locals='{
-										"multiply": "1x",
-										"text": "Active krehle rohlicky s celozrnou moukou Bona Vita"
-									}'
-						></module>
-						<module
-								href="/components/checklistItem.html"
-								locals='{
-											"multiply": "2x",
-											"text": "bio celozrnný žitný chléb s pšenicí špaldou a zelenou pšenicí špaldou"
-										}'
-						></module>
-					</div>
-				</div>
-
-				<div class="px-3 w-6/12">
-					<div class="px-4 pb-6">
-						<module
-								href="/components/dottedHeader.html"
-								locals='{
-									"title": "Mléko a mléčné výrobky",
-									"subtitle": "",
-									"color": "blue"
-								}'
-						></module>
-						<module
-								href="/components/checklistItem.html"
-								locals='{
-										"multiply": "2x",
-										"text": "Acidofilní mléko"
-									}'
-						></module>
-						<module
-								href="/components/checklistItem.html"
-								locals='{
-										"multiply": "1x",
-										"text": "Acidofilní mléko 3,6% tuku K-classic"
-									}'
-						></module>
-						<module
-								href="/components/checklistItem.html"
-								locals='{
-											"multiply": "2x",
-											"text": "Edamer sýr plátkový 40 %"
-										}'
-						></module>
-						<module
-								href="/components/checklistItem.html"
-								locals='{
-											"multiply": "2x",
-											"text": "Ementaler Boryna 20% tuku"
-										}'
-						></module>
-						<module
-								href="/components/checklistItem.html"
-								locals='{
-											"multiply": "2x",
-											"text": "Ehrmann Almighurt do ruky Meruňka"
-										}'
-						></module>
-					</div>
-				</div>
-
-				<div class="px-3 w-6/12">
-					<div class="px-4 pb-6">
-						<module
-								href="/components/dottedHeader.html"
-								locals='{
-									"title": "Ořechy, semena",
-									"subtitle": "",
-									"color": "green"
-								}'
-						></module>
-						<module
-								href="/components/checklistItem.html"
-								locals='{
-										"multiply": "2x",
-										"text": "Acidofilní mléko"
-									}'
-						></module>
-						<module
-								href="/components/checklistItem.html"
-								locals='{
-										"multiply": "1x",
-										"text": "Acidofilní mléko 3,6% tuku K-classic"
-									}'
-						></module>
-						<module
-								href="/components/checklistItem.html"
-								locals='{
-											"multiply": "2x",
-											"text": "Edamer sýr plátkový 40 %"
-										}'
-						></module>
-						<module
-								href="/components/checklistItem.html"
-								locals='{
-											"multiply": "2x",
-											"text": "Ementaler Boryna 20% tuku"
-										}'
-						></module>
-						<module
-								href="/components/checklistItem.html"
-								locals='{
-											"multiply": "2x",
-											"text": "Ehrmann Almighurt do ruky Meruňka"
-										}'
-						></module>
-					</div>
-				</div>
-
-				<div class="px-3 w-6/12">
-					<div class="px-4 pb-6">
-						<module
-								href="/components/dottedHeader.html"
-								locals='{
-									"title": "Maso, drůbež, ryby, uzeniny",
-									"subtitle": "",
-									"color": "teal"
-								}'
-						></module>
-						<module
-								href="/components/checklistItem.html"
-								locals='{
-										"multiply": "2x",
-										"text": "Atlantik Sardinky bez kůže a kostí ve slunečnicovém oleji"
-									}'
-						></module>
-						<module
-								href="/components/checklistItem.html"
-								locals='{
-										"multiply": "200g",
-										"text": "Auvergnská sušená šunka"
-									}'
-						></module>
-						<module
-								href="/components/checklistItem.html"
-								locals='{
-											"multiply": "2x",
-											"text": "bernské minipárky se sýrem, obalené uzenou slaninou, Lidl"
-										}'
-						></module>
-						<module
-								href="/components/checklistItem.html"
-								locals='{
-											"multiply": "5x",
-											"text": "Berger wellness schinken"
-										}'
-						></module>
-						<module
-								href="/components/checklistItem.html"
-								locals='{
-											"multiply": "300g",
-											"text": "Hovězí šunka z kýty s pepřem"
-										}'
-						></module>
-						<module
-								href="/components/checklistItem.html"
-								locals='{
-											"multiply": "300g",
-											"text": "Játrová paštika jemná Kaufland"
-										}'
-						></module>
-						<module
-								href="/components/checklistItem.html"
-								locals='{
-											"multiply": "300g",
-											"text": "Játrová paštika jemná Kaufland"
-										}'
-						></module>
-					</div>
-				</div>
-
-				<div class="px-3 w-6/12">
-					<div class="px-4 pb-6">
-						<module
-								href="/components/dottedHeader.html"
-								locals='{
-									"title": "Obiloviny, mouka, cereální výrobky",
-									"subtitle": "",
-									"color": "gray"
-								}'
-						></module>
-						<module
-								href="/components/checklistItem.html"
-								locals='{
-										"multiply": "2x",
-										"text": "Active kvaskovy se spaldovou moukou a slunecnici"
-									}'
-						></module>
-						<module
-								href="/components/checklistItem.html"
-								locals='{
-										"multiply": "200g",
-										"text": "Adriana pasta integral Fusilli"
-									}'
-						></module>
-						<module
-								href="/components/checklistItem.html"
-								locals='{
-											"multiply": "2x",
-											"text": "Bezlepkáč-müsli s ovocem a skořicí"
-										}'
-						></module>
-					</div>
-				</div>
-
-			</div>
-			<module href="/components/footer.html"></module>
-		</section>
-		<section class="sheet flex flex-col text-gray-700">
-			<module
-					href="/components/header.html"
-					locals='{
-						"title": "Záznamy klienta",
-						"subtitle": ""
-					}'
-			></module>
-			<div class="flex w-full px-6">
-				<module
-						href="/components/panel.html"
-						locals='{
-								"header": "Záznam",
-								"headerColor": "violet",
-								"kcal": "",
-								"color": "gray",
-								"panelStyle": "hollow",
-								"icon": "",
-								"iconColor": ""
-							}'
-				>
-					<div class="w-full flex items-center mb-1">
-						<h3 class="font-bold">28. 5. 2020</h3>
-						<span class="bg-gray-200 rounded-full px-2 inline-block leading-4 ml-2 text-3xs text-gray-600 font-bold">2 500 Kč</span>
-					</div>
-					<div class="mb-4">
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam aliquet consectetur aliquam. Etiam sed metus at metus elementum aliquet.
-						Phasellus auctor urna in ultricies vehicula.
-						<div class="w-full space-x-2 mt-2 flex">
-							<span class="bg-gray-800 rounded px-2 flex leading-4 text-3xs text-white font-bold">Zranění</span>
-							<span class="bg-red-800 rounded px-2 flex leading-4 text-3xs text-white font-bold">Doporučení</span>
-							<span class="bg-green-800 rounded px-2 flex leading-4 text-3xs text-white font-bold">Konzultace</span>
-						</div>
-					</div>
-					<div class="w-full flex items-center mb-1">
-						<h3 class="font-bold">28. 5. 2020</h3>
-					</div>
-					<div class="mb-4">
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam aliquet consectetur aliquam. Etiam sed metus at metus elementum aliquet.
-						Phasellus auctor urna in ultricies vehicula.
-						<div class="w-full space-x-2 mt-2 flex">
-							<span class="bg-red-800 rounded px-2 flex leading-4 text-3xs text-white font-bold">Doporučení</span>
-							<span class="bg-green-800 rounded px-2 flex leading-4 text-3xs text-white font-bold">Konzultace</span>
-						</div>
-					</div>
-					<div class="w-full flex items-center mb-1">
-						<h3 class="font-bold">28. 5. 2020</h3>
-					</div>
-					<div>
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam aliquet consectetur aliquam. Etiam sed metus at metus elementum aliquet.
-						Phasellus auctor urna in ultricies vehicula.
-						<div class="w-full space-x-2 mt-2 flex">
-							<span class="bg-gray-800 rounded px-2 flex leading-4 text-3xs text-white font-bold">Zranění</span>
-							<span class="bg-green-800 rounded px-2 flex leading-4 text-3xs text-white font-bold">Konzultace</span>
-						</div>
-					</div>
-				</module>
-			</div>
-			<module href="/components/footer.html"></module>
-		</section>
+	<body class="text-xs font-medium A4">
+        <!-- Denní plán -->
+        <module
+            href="/components/header.html"
+            locals='{
+                "title": "Denní plán",
+                "subtitle": "4. 2. 2020"
+            }'
+        ></module>
+        <module href="/components/basePage.html">
+            <section class="text-gray-700 sheet">
+                <div class="flex">
+                    <div class="w-7/12 pl-6 pr-1">
+                        <module
+                            href="/components/panel.html"
+                            locals='{
+                                    "header": "Snídaně",
+                                    "headerColor": "",
+                                    "kcal": "362 kcal",
+                                    "color": "blue",
+                                    "panelStyle": "",
+                                    "icon": "fa/s/utensils",
+                                    "panelStyle": "",
+                                    "iconColor": "2B6CB0"
+                                }'
+                        >
+                            <div class="richtext">
+                                <ul>
+                                    <li>Mugcake s jablky a skořicí</li>
+                                </ul>
+                            </div>
+                        </module>
+                        <module
+                                href="/components/panel.html"
+                                locals='{
+                                    "header": "Přesnídávka",
+                                    "headerColor": "",
+                                    "kcal": "362 kcal",
+                                    "color": "gray",
+                                    "panelStyle": "",
+                                    "icon": "fa/s/carrot",
+                                    "iconColor": "718096"
+                                }'
+                        >
+                            <div class="richtext">
+                                <ul>
+                                    <li>Grapefruit 100 g</li>
+                                </ul>
+                            </div>
+                        </module>
+                        <module
+                                href="/components/panel.html"
+                                locals='{
+                                    "header": "Oběd",
+                                    "headerColor": "",
+                                    "kcal": "362 kcal",
+                                    "color": "violet",
+                                    "panelStyle": "",
+                                    "icon": "fa/s/drumstick-bite",
+                                    "iconColor": "88395F"
+                                }'
+                        >
+                            <div class="richtext">
+                                <ul>
+                                    <li>Maso kuřecí prsa, bez kůže 200 g</li>
+                                    <li>Paprika zeleninová, zelená 70 g</li>
+                                    <li>Rajčata cherry 70 g</li>
+                                    <li>Brambory zimní, loupané, vařené v nesolené vodě 220 g</li>
+                                    <li>Olej řepkový, nízkoerukový 10 g Cibule 60 g</li>
+                                </ul>
+                            </div>
+                        </module>
+                        <module
+                                href="/components/panel.html"
+                                locals='{
+                                    "header": "Svačina",
+                                    "headerColor": "",
+                                    "kcal": "164 kcal",
+                                    "color": "gray",
+                                    "panelStyle": "",
+                                    "icon": "fa/s/apple-alt",
+                                    "iconColor": "718096"
+                                }'
+                        >
+                            <div class="richtext">
+                                <ul>
+                                    <li>Tvaroh polotučný 150 g</li>
+                                </ul>
+                            </div>
+                        </module>
+                        <module
+                                href="/components/panel.html"
+                                locals='{
+                                    "header": "Večeře",
+                                    "headerColor": "",
+                                    "kcal": "518 kcal",
+                                    "color": "teal",
+                                    "panelStyle": "",
+                                    "icon": "fa/s/fish",
+                                    "iconColor": "319795"
+                                }'
+                        >
+                            <div class="richtext">
+                                <ul>
+                                    <li>Salát z červené řepy se sýrem cottage</li>
+                                </ul>
+                            </div>
+                        </module>
+                        <module
+                                href="/components/panel.html"
+                                locals='{
+                                    "header": "Aktivity",
+                                    "headerColor": "",
+                                    "kcal": "362 kcal",
+                                    "color": "green",
+                                    "panelStyle": "",
+                                    "icon": "remix/map/run-fill",
+                                    "iconColor": "8E9229"
+                                }'
+                        >
+                            <div class="richtext">
+                                <ul>
+                                    <li>Maso kuřecí prsa, bez kůže 200 g</li>
+                                    <li>Paprika zeleninová, zelená 70 g</li>
+                                    <li>Rajčata cherry 70 g</li>
+                                    <li>Brambory zimní, loupané, vařené v nesolené vodě 220 g</li>
+                                    <li>Olej řepkový, nízkoerukový 10 g Cibule 60 g</li>
+                                </ul>
+                            </div>
+                        </module>
+                        <module
+                                href="/components/panel.html"
+                                locals='{
+                                    "header": "Aktivity",
+                                    "headerColor": "",
+                                    "kcal": "362 kcal",
+                                    "color": "green",
+                                    "panelStyle": "",
+                                    "icon": "remix/map/run-fill",
+                                    "iconColor": "8E9229"
+                                }'
+                        >
+                            <div class="richtext">
+                                <ul>
+                                    <li>Maso kuřecí prsa, bez kůže 200 g</li>
+                                    <li>Paprika zeleninová, zelená 70 g</li>
+                                    <li>Rajčata cherry 70 g</li>
+                                    <li>Brambory zimní, loupané, vařené v nesolené vodě 220 g</li>
+                                    <li>Olej řepkový, nízkoerukový 10 g Cibule 60 g</li>
+                                </ul>
+                            </div>
+                        </module>
+                        <module
+                                href="/components/panel.html"
+                                locals='{
+                                    "header": "Aktivity",
+                                    "headerColor": "",
+                                    "kcal": "362 kcal",
+                                    "color": "green",
+                                    "panelStyle": "",
+                                    "icon": "remix/map/run-fill",
+                                    "iconColor": "8E9229"
+                                }'
+                        >
+                            <div class="richtext">
+                                <ul>
+                                    <li>Maso kuřecí prsa, bez kůže 200 g</li>
+                                    <li>Paprika zeleninová, zelená 70 g</li>
+                                    <li>Rajčata cherry 70 g</li>
+                                    <li>Brambory zimní, loupané, vařené v nesolené vodě 220 g</li>
+                                    <li>Olej řepkový, nízkoerukový 10 g Cibule 60 g</li>
+                                </ul>
+                            </div>
+                        </module>
+                        <module
+                                href="/components/panel.html"
+                                locals='{
+                                    "header": "Aktivity",
+                                    "headerColor": "",
+                                    "kcal": "362 kcal",
+                                    "color": "green",
+                                    "panelStyle": "",
+                                    "icon": "remix/map/run-fill",
+                                    "iconColor": "8E9229"
+                                }'
+                        >
+                            <div class="richtext">
+                                <ul>
+                                    <li>Maso kuřecí prsa, bez kůže 200 g</li>
+                                    <li>Paprika zeleninová, zelená 70 g</li>
+                                    <li>Rajčata cherry 70 g</li>
+                                    <li>Brambory zimní, loupané, vařené v nesolené vodě 220 g</li>
+                                    <li>Olej řepkový, nízkoerukový 10 g Cibule 60 g</li>
+                                </ul>
+                            </div>
+                        </module>
+                        <div class="flex justify-end w-full">
+                            Celková energie: <strong class="text-bold text-violet-500">1592 kcal</strong>
+                        </div>
+                    </div>
+                    <div class="w-5/12 pl-1 pr-6">
+                        <module
+                                href="/components/panel.html"
+                                locals='{
+                                    "header": "Mikro a makro živiny",
+                                    "headerColor": "",
+                                    "kcal": "",
+                                    "color": "gray",
+                                    "panelStyle": "hollow",
+                                    "icon": "",
+                                    "iconColor": "2B6CB0"
+                                }'
+                        >
+                            <div class="flex flex-no-wrap py-2 my-2 -mx-4 text-gray-600 uppercase bg-gray-100 text-3xs">
+                                <div class="w-2/3 pl-4 pr-1 font-bold">Název</div>
+                                <div class="w-1/3 pl-1 pr-4 font-bold">Hodnota</div>
+                            </div>
+                            <div class="flex flex-no-wrap py-1 -mx-4">
+                                <div class="w-2/3 pl-4 pr-1">Voda</div>
+                                <div class="w-1/3 pl-1 pr-4 font-bold">1077 ml</div>
+                            </div>
+                            <div class="flex flex-no-wrap py-1 -mx-4">
+                                <div class="w-2/3 pl-4 pr-1">Sacharidy</div>
+                                <div class="w-1/3 pl-1 pr-4 font-bold">185 g</div>
+                            </div>
+                            <div class="flex flex-no-wrap py-1 -mx-4">
+                                <div class="w-2/3 pl-8 pr-1">z toho cukry</div>
+                                <div class="w-1/3 pl-1 pr-4 font-bold">24 g</div>
+                            </div>
+                            <div class="flex flex-no-wrap py-1 -mx-4">
+                                <div class="w-2/3 pl-4 pr-1">Vláknina</div>
+                                <div class="w-1/3 pl-1 pr-4 font-bold">42 g</div>
+                            </div>
+                            <div class="flex flex-no-wrap py-1 -mx-4">
+                                <div class="w-2/3 pl-4 pr-1">Tuky</div>
+                                <div class="w-1/3 pl-1 pr-4 font-bold">42 g</div>
+                            </div>
+                            <div class="flex flex-no-wrap py-1 -mx-4">
+                                <div class="w-2/3 pl-8 pr-1">z toho nasycené</div>
+                                <div class="w-1/3 pl-1 pr-4 font-bold">19 g</div>
+                            </div>
+                            <div class="flex flex-no-wrap py-1 -mx-4">
+                                <div class="w-2/3 pl-8 pr-1">z toho nenasycené</div>
+                                <div class="w-1/3 pl-1 pr-4 font-bold">0 g</div>
+                            </div>
+                            <div class="flex flex-no-wrap py-1 -mx-4">
+                                <div class="w-2/3 pl-8 pr-1">Mononenasycené mastné kyseliny</div>
+                                <div class="w-1/3 pl-1 pr-4 font-bold">24 g</div>
+                            </div>
+                            <div class="flex flex-no-wrap py-1 -mx-4">
+                                <div class="w-2/3 pl-8 pr-1">Polynenasycené mastné kyseliny</div>
+                                <div class="w-1/3 pl-1 pr-4 font-bold">24 g</div>
+                            </div>
+                            <div class="flex flex-no-wrap py-1 -mx-4">
+                                <div class="w-2/3 pl-8 pr-1">Trans- mastné kyseliny</div>
+                                <div class="w-1/3 pl-1 pr-4 font-bold">24 g</div>
+                            </div>
+                            <div class="flex flex-no-wrap py-1 -mx-4">
+                                <div class="w-2/3 pl-8 pr-1">Cholesterol</div>
+                                <div class="w-1/3 pl-1 pr-4 font-bold">24 g</div>
+                            </div>
+                            <div class="flex flex-no-wrap py-1 -mx-4">
+                                <div class="w-2/3 pl-4 pr-1">Bílkoviny</div>
+                                <div class="w-1/3 pl-1 pr-4 font-bold">110 g</div>
+                            </div>
+                        </module>
+                    </div>
+                </div>
+            </section>
+        </module>
+        <module href="/components/footer.html"></module>
 		<script> </script>
 	</body>
 </html>

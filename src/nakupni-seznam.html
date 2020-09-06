@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Beetfit PDF</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+		<link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;700&display=swap" rel="stylesheet">
+		<link href="./assets/css/styles.css" rel="stylesheet" />
+		<style>@page { size: A4 }</style>
+	</head>
+	<body class="text-xs font-medium A4">
+        <module
+            href="/components/header.html"
+            locals='{
+                "title": "Nákupní seznam",
+                "subtitle": "29. 6. 2020 - 5. 7. 2020"
+            }'
+        ></module>
+        <module href="/components/basePage.html">
+            <section class="text-gray-700 sheet">
+                <div class="relative flex flex-wrap px-3 page-break-inside-avoid">
+                    <div class="w-6/12 px-3">
+                        <div class="px-4 pb-6">
+                            <module
+                                    href="/components/dottedHeader.html"
+                                    locals='{
+                                        "title": "Brambory, luštěniny, houby",
+                                        "subtitle": "",
+                                        "color": "green"
+                                    }'
+                            ></module>
+                                <module
+                                        href="/components/checklistItem.html"
+                                        locals='{
+                                            "multiply": "2x",
+                                            "text": "Tofu lahůdka klasik"
+                                        }'
+                                ></module>
+                                <module
+                                        href="/components/checklistItem.html"
+                                        locals='{
+                                            "multiply": "1x",
+                                            "text": "Bonduelle vapeur červené fazole"
+                                        }'
+                                ></module>
+                                <module
+                                        href="/components/checklistItem.html"
+                                        locals='{
+                                                "multiply": "2x",
+                                                "text": "bramborová kaše s mlékem a máslem"
+                                            }'
+                                ></module>
+                                <module
+                                        href="/components/checklistItem.html"
+                                        locals='{
+                                                    "multiply": "5x",
+                                                    "text": "Cizrna v konzervě"
+                                                }'
+                                ></module>
+                        </div>
+                    </div>
+                    <div class="w-6/12 px-3">
+                        <div class="px-4 pb-6">
+                            <module
+                                    href="/components/dottedHeader.html"
+                                    locals='{
+                                        "title": "Hotové pokrmy, polotovary",
+                                        "subtitle": "",
+                                        "color": "purple"
+                                    }'
+                            ></module>
+                            <module
+                                    href="/components/checklistItem.html"
+                                    locals='{
+                                            "multiply": "2x",
+                                            "text": "Albert krevety vařené loupané solené bez hlavy (JNO)"
+                                        }'
+                            ></module>
+                            <module
+                                    href="/components/checklistItem.html"
+                                    locals='{
+                                            "multiply": "1x",
+                                            "text": "Asijské krůtí nudličky Aramark"
+                                        }'
+                            ></module>
+                            <module
+                                    href="/components/checklistItem.html"
+                                    locals='{
+                                                "multiply": "2x",
+                                                "text": "Bohatá polévka s fazolemi Albert Fresh Bistro"
+                                            }'
+                            ></module>
+                            <module
+                                    href="/components/checklistItem.html"
+                                    locals='{
+                                                "multiply": "2x",
+                                                "text": "Bolognese omáčka albert"
+                                            }'
+                            ></module>
+                            <module
+                                    href="/components/checklistItem.html"
+                                    locals='{
+                                                "multiply": "2x",
+                                                "text": "Bramborové noky s vepřovou panenkou, smetanovo-hříbkovou omáčkou"
+                                            }'
+                            ></module>
+                        </div>
+                    </div>
+                </div>
+                <div class="relative flex flex-wrap px-3 page-break-inside-avoid">
+                    <div class="w-6/12 px-3">
+                        <div class="px-4 pb-6">
+                            <module
+                                    href="/components/dottedHeader.html"
+                                    locals='{
+                                        "title": "Chléb, pečivo",
+                                        "subtitle": "",
+                                        "color": "violet"
+                                    }'
+                            ></module>
+                            <module
+                                    href="/components/checklistItem.html"
+                                    locals='{
+                                            "multiply": "2x",
+                                            "text": "7 days croissant caramel"
+                                        }'
+                            ></module>
+                            <module
+                                    href="/components/checklistItem.html"
+                                    locals='{
+                                            "multiply": "1x",
+                                            "text": "Active krehle rohlicky s celozrnou moukou Bona Vita"
+                                        }'
+                            ></module>
+                            <module
+                                    href="/components/checklistItem.html"
+                                    locals='{
+                                                "multiply": "2x",
+                                                "text": "bio celozrnný žitný chléb s pšenicí špaldou a zelenou pšenicí špaldou"
+                                            }'
+                            ></module>
+                        </div>
+                    </div>
+                    <div class="w-6/12 px-3">
+                        <div class="px-4 pb-6">
+                            <module
+                                    href="/components/dottedHeader.html"
+                                    locals='{
+                                        "title": "Mléko a mléčné výrobky",
+                                        "subtitle": "",
+                                        "color": "blue"
+                                    }'
+                            ></module>
+                            <module
+                                    href="/components/checklistItem.html"
+                                    locals='{
+                                            "multiply": "2x",
+                                            "text": "Acidofilní mléko"
+                                        }'
+                            ></module>
+                            <module
+                                    href="/components/checklistItem.html"
+                                    locals='{
+                                            "multiply": "1x",
+                                            "text": "Acidofilní mléko 3,6% tuku K-classic"
+                                        }'
+                            ></module>
+                            <module
+                                    href="/components/checklistItem.html"
+                                    locals='{
+                                                "multiply": "2x",
+                                                "text": "Edamer sýr plátkový 40 %"
+                                            }'
+                            ></module>
+                            <module
+                                    href="/components/checklistItem.html"
+                                    locals='{
+                                                "multiply": "2x",
+                                                "text": "Ementaler Boryna 20% tuku"
+                                            }'
+                            ></module>
+                            <module
+                                    href="/components/checklistItem.html"
+                                    locals='{
+                                                "multiply": "2x",
+                                                "text": "Ehrmann Almighurt do ruky Meruňka"
+                                            }'
+                            ></module>
+                        </div>
+                    </div>
+                </div>
+                <div class="relative flex flex-wrap px-3 page-break-inside-avoid">
+                    <div class="w-6/12 px-3">
+                        <div class="px-4 pb-6">
+                            <module
+                                    href="/components/dottedHeader.html"
+                                    locals='{
+                                        "title": "Ořechy, semena",
+                                        "subtitle": "",
+                                        "color": "green"
+                                    }'
+                            ></module>
+                            <module
+                                    href="/components/checklistItem.html"
+                                    locals='{
+                                            "multiply": "2x",
+                                            "text": "Acidofilní mléko"
+                                        }'
+                            ></module>
+                            <module
+                                    href="/components/checklistItem.html"
+                                    locals='{
+                                            "multiply": "1x",
+                                            "text": "Acidofilní mléko 3,6% tuku K-classic"
+                                        }'
+                            ></module>
+                            <module
+                                    href="/components/checklistItem.html"
+                                    locals='{
+                                                "multiply": "2x",
+                                                "text": "Edamer sýr plátkový 40 %"
+                                            }'
+                            ></module>
+                            <module
+                                    href="/components/checklistItem.html"
+                                    locals='{
+                                                "multiply": "2x",
+                                                "text": "Ementaler Boryna 20% tuku"
+                                            }'
+                            ></module>
+                            <module
+                                    href="/components/checklistItem.html"
+                                    locals='{
+                                                "multiply": "2x",
+                                                "text": "Ehrmann Almighurt do ruky Meruňka"
+                                            }'
+                            ></module>
+                        </div>
+                    </div>
+                    <div class="w-6/12 px-3">
+                        <div class="px-4 pb-6">
+                            <module
+                                    href="/components/dottedHeader.html"
+                                    locals='{
+                                        "title": "Maso, drůbež, ryby, uzeniny",
+                                        "subtitle": "",
+                                        "color": "teal"
+                                    }'
+                            ></module>
+                            <module
+                                    href="/components/checklistItem.html"
+                                    locals='{
+                                            "multiply": "2x",
+                                            "text": "Atlantik Sardinky bez kůže a kostí ve slunečnicovém oleji"
+                                        }'
+                            ></module>
+                            <module
+                                    href="/components/checklistItem.html"
+                                    locals='{
+                                            "multiply": "200g",
+                                            "text": "Auvergnská sušená šunka"
+                                        }'
+                            ></module>
+                            <module
+                                    href="/components/checklistItem.html"
+                                    locals='{
+                                                "multiply": "2x",
+                                                "text": "bernské minipárky se sýrem, obalené uzenou slaninou, Lidl"
+                                            }'
+                            ></module>
+                            <module
+                                    href="/components/checklistItem.html"
+                                    locals='{
+                                                "multiply": "5x",
+                                                "text": "Berger wellness schinken"
+                                            }'
+                            ></module>
+                            <module
+                                    href="/components/checklistItem.html"
+                                    locals='{
+                                                "multiply": "300g",
+                                                "text": "Hovězí šunka z kýty s pepřem"
+                                            }'
+                            ></module>
+                            <module
+                                    href="/components/checklistItem.html"
+                                    locals='{
+                                                "multiply": "300g",
+                                                "text": "Játrová paštika jemná Kaufland"
+                                            }'
+                            ></module>
+                            <module
+                                    href="/components/checklistItem.html"
+                                    locals='{
+                                                "multiply": "300g",
+                                                "text": "Játrová paštika jemná Kaufland"
+                                            }'
+                            ></module>
+                        </div>
+                    </div>
+                </div>
+                <div class="relative flex flex-wrap px-3 page-break-inside-avoid">
+                    <div class="w-6/12 px-3">
+                        <div class="relative px-4 pb-6 page-break-inside-avoid">
+                            <module
+                                    href="/components/dottedHeader.html"
+                                    locals='{
+                                        "title": "Obiloviny, mouka, cereální výrobky",
+                                        "subtitle": "",
+                                        "color": "gray"
+                                    }'
+                            ></module>
+                            <module
+                                    href="/components/checklistItem.html"
+                                    locals='{
+                                            "multiply": "2x",
+                                            "text": "Active kvaskovy se spaldovou moukou a slunecnici"
+                                        }'
+                            ></module>
+                            <module
+                                    href="/components/checklistItem.html"
+                                    locals='{
+                                            "multiply": "200g",
+                                            "text": "Adriana pasta integral Fusilli"
+                                        }'
+                            ></module>
+                            <module
+                                    href="/components/checklistItem.html"
+                                    locals='{
+                                                "multiply": "2x",
+                                                "text": "Bezlepkáč-müsli s ovocem a skořicí"
+                                            }'
+                            ></module>
+                            <module
+                            href="/components/checklistItem.html"
+                            locals='{
+                                    "multiply": "2x",
+                                    "text": "Active kvaskovy se spaldovou moukou a slunecnici"
+                                }'
+                            ></module>
+                            <module
+                                    href="/components/checklistItem.html"
+                                    locals='{
+                                            "multiply": "200g",
+                                            "text": "Adriana pasta integral Fusilli"
+                                        }'
+                            ></module>
+                            <module
+                                    href="/components/checklistItem.html"
+                                    locals='{
+                                                "multiply": "2x",
+                                                "text": "Bezlepkáč-müsli s ovocem a skořicí"
+                                            }'
+                            ></module>
+                            <module
+                            href="/components/checklistItem.html"
+                            locals='{
+                                    "multiply": "2x",
+                                    "text": "Active kvaskovy se spaldovou moukou a slunecnici"
+                                }'
+                            ></module>
+                            <module
+                                    href="/components/checklistItem.html"
+                                    locals='{
+                                            "multiply": "200g",
+                                            "text": "Adriana pasta integral Fusilli"
+                                        }'
+                            ></module>
+                            <module
+                                    href="/components/checklistItem.html"
+                                    locals='{
+                                                "multiply": "2x",
+                                                "text": "Bezlepkáč-müsli s ovocem a skořicí"
+                                            }'
+                            ></module>
+                            <module
+                            href="/components/checklistItem.html"
+                            locals='{
+                                        "multiply": "2x",
+                                        "text": "Bezlepkáč-müsli s ovocem a skořicí"
+                                    }'
+                            ></module>
+                            <module
+                            href="/components/checklistItem.html"
+                            locals='{
+                                    "multiply": "2x",
+                                    "text": "Active kvaskovy se spaldovou moukou a slunecnici"
+                                }'
+                            ></module>
+                            <module
+                                    href="/components/checklistItem.html"
+                                    locals='{
+                                            "multiply": "200g",
+                                            "text": "Adriana pasta integral Fusilli"
+                                        }'
+                            ></module>
+                            <module
+                                    href="/components/checklistItem.html"
+                                    locals='{
+                                                "multiply": "2x",
+                                                "text": "Bezlepkáč-müsli s ovocem a skořicí"
+                                            }'
+                            ></module>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </module>
+        <module href="/components/footer.html"></module>
+		<script> </script>
+	</body>
+</html>
