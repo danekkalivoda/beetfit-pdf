@@ -5,7 +5,7 @@
   "scripts": {
     "start": "concurrently 'yarn clean' 'yarn optimize' 'yarn watch' 'yarn dev'",
     "dev": "parcel ./src/*.html --public-url '/'",
-    "prod": "NODE_ENV=production node ./tools/image-optimizer.js && parcel build ./src/*.html  --no-cache --no-minify --no-source-maps --public-url '/'",
+    "prod": "NODE_ENV=production node ./tools/image-optimizer.js && parcel build ./src/*.html  --no-cache --no-source-maps --public-url '/'",
     "watch": "node ./tools/watcher.js",
     "optimize": "node ./tools/image-optimizer.js",
     "clean": "rm -rf dist .cache"

@@ -262,7 +262,5 @@ html{
         }
     }
 }
-
-
-@tailwind utilities;
 /* purgecss end ignore */
+@tailwind utilities;
