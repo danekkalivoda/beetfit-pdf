@@ -64,7 +64,23 @@ module.exports = {
   },
   variants: {
     textColor: [],
+    textOpacity: [],
     borderColor: [],
     backgroundColor: [],
+    width: [],
+    flex: [],
+    padding: [],
+    margin: [],
+    fontSize: [],
+    backgroundOpacity: [],
+    boxShadow: [],
+    opacity: [],
+    translate: [],
+    rotate: [],
+    scale: [],
+    gridTemplateColumns: false,
+    gridColumn: false,
+    gridColumnStart: false,
+    gridColumnEnd: false
   }
 }
