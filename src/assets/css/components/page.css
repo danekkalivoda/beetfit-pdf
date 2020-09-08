@@ -1,5 +1,6 @@
 @page{
     margin: 0;
+    height: 297mm;
 }
 body{
     margin: 0;
@@ -24,6 +25,7 @@ body{
 .fake-footer, .fake-header{
     @apply hidden;
 }
+
 body.A3 .sheet{
     width:297mm;
     height:419mm
