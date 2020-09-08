@@ -63,5 +63,8 @@ module.exports = {
     },
   },
   variants: {
+    textColor: [],
+    borderColor: [],
+    backgroundColor: [],
   }
 }

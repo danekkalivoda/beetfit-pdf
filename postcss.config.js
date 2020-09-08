@@ -6,6 +6,7 @@ const purgecss = require('@fullhuman/postcss-purgecss')({
     './src/*.html',
     // etc.
   ],
+  whitelistPatterns: [/(bg|border|text)-.+/],
 
   // This is the function used to extract class names from your templates
   defaultExtractor: content => {

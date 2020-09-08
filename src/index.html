@@ -10,275 +10,326 @@
 	</head>
 	<body class="text-xs font-medium A4">
         <!-- Denní plán -->
-        <module
-            href="/components/header.html"
-            locals='{
-                "title": "Denní plán",
-                "subtitle": "4. 2. 2020"
-            }'
-        ></module>
-        <module href="/components/basePage.html">
-            <section class="text-gray-700 sheet">
-                <div class="flex">
-                    <div class="w-7/12 pl-6 pr-1">
-                        <module
-                            href="/components/panel.html"
-                            locals='{
-                                    "header": "Snídaně",
-                                    "headerColor": "",
-                                    "kcal": "362 kcal",
-                                    "color": "blue",
-                                    "panelStyle": "",
-                                    "icon": "fa/s/utensils",
-                                    "panelStyle": "",
-                                    "iconColor": "2B6CB0"
-                                }'
-                        >
-                            <div class="richtext">
-                                <ul>
-                                    <li>Mugcake s jablky a skořicí</li>
-                                </ul>
+        <div class="relative text-gray-700 sheet">
+            <table class="w-full">
+                <thead>
+                    <tr>
+                        <td>
+                            <div class="flex flex-no-wrap items-center py-6 mx-auto text-gray-700">
+                                <div class="flex flex-col w-5/12 pl-10">
+                                    <div class="text-xl font-bold">
+                                        Denní plán
+                                    </div>
+                                    <div class="text-xs">4. 2. 2020</div>
+                                </div>
+                                <div class="flex flex-col w-5/12 text-2xs">
+                                    <div class="flex items-start w-full">
+                                        <div class="w-1/3 pr-2 text-right text-gray-600">Název firmy:</div>
+                                        <div class="w-2/3 font-bold">Fitbee s.r.o. Praha 4, Podolská 25</div>
+                                    </div>
+                                    <div class="flex items-start w-full">
+                                        <div class="w-1/3 pr-2 text-right text-gray-600">Specialista:</div>
+                                        <div class="w-2/3 font-bold">Marcela Krausová</div>
+                                    </div>
+                                    <div class="flex items-start w-full">
+                                        <div class="w-1/3 pr-2 text-right text-gray-600">Název firmy:</div>
+                                        <div class="w-2/3 font-bold">Daniel Kalivoda [831118/3309]</div>
+                                    </div>
+                                </div>
+                                <div class="w-2/12 pr-10">
+                                    <img src="https://s3.eu-central-1.amazonaws.com/unitecmsfx/beetfit/f20ec83a-484a-11ea-935f-a99480d98453/logo_1_color.png" loading="lazy">
+                                </div>
                             </div>
-                        </module>
-                        <module
-                                href="/components/panel.html"
-                                locals='{
-                                    "header": "Přesnídávka",
-                                    "headerColor": "",
-                                    "kcal": "362 kcal",
-                                    "color": "gray",
-                                    "panelStyle": "",
-                                    "icon": "fa/s/carrot",
-                                    "iconColor": "718096"
-                                }'
-                        >
-                            <div class="richtext">
-                                <ul>
-                                    <li>Grapefruit 100 g</li>
-                                </ul>
+
+                        </td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <div class="flex">
+                                <div class="w-7/12 pl-6 pr-1">
+                                    <module
+                                        href="/components/panel.html"
+                                        locals='{
+                                                "header": "Snídaně",
+                                                "headerColor": "",
+                                                "kcal": "362 kcal",
+                                                "color": "blue",
+                                                "panelStyle": "",
+                                                "icon": "fa/s/utensils",
+                                                "panelStyle": "",
+                                                "iconColor": "2B6CB0"
+                                            }'
+                                    >
+                                        <div class="richtext">
+                                            <ul>
+                                                <li>Mugcake s jablky a skořicí</li>
+                                            </ul>
+                                        </div>
+                                    </module>
+                                    <module
+                                            href="/components/panel.html"
+                                            locals='{
+                                                "header": "Přesnídávka",
+                                                "headerColor": "",
+                                                "kcal": "362 kcal",
+                                                "color": "gray",
+                                                "panelStyle": "",
+                                                "icon": "fa/s/carrot",
+                                                "iconColor": "718096"
+                                            }'
+                                    >
+                                        <div class="richtext">
+                                            <ul>
+                                                <li>Grapefruit 100 g</li>
+                                            </ul>
+                                        </div>
+                                    </module>
+                                    <module
+                                            href="/components/panel.html"
+                                            locals='{
+                                                "header": "Oběd",
+                                                "headerColor": "",
+                                                "kcal": "362 kcal",
+                                                "color": "violet",
+                                                "panelStyle": "",
+                                                "icon": "fa/s/drumstick-bite",
+                                                "iconColor": "88395F"
+                                            }'
+                                    >
+                                        <div class="richtext">
+                                            <ul>
+                                                <li>Maso kuřecí prsa, bez kůže 200 g</li>
+                                                <li>Paprika zeleninová, zelená 70 g</li>
+                                                <li>Rajčata cherry 70 g</li>
+                                                <li>Brambory zimní, loupané, vařené v nesolené vodě 220 g</li>
+                                                <li>Olej řepkový, nízkoerukový 10 g Cibule 60 g</li>
+                                            </ul>
+                                        </div>
+                                    </module>
+                                    <module
+                                            href="/components/panel.html"
+                                            locals='{
+                                                "header": "Svačina",
+                                                "headerColor": "",
+                                                "kcal": "164 kcal",
+                                                "color": "gray",
+                                                "panelStyle": "",
+                                                "icon": "fa/s/apple-alt",
+                                                "iconColor": "718096"
+                                            }'
+                                    >
+                                        <div class="richtext">
+                                            <ul>
+                                                <li>Tvaroh polotučný 150 g</li>
+                                            </ul>
+                                        </div>
+                                    </module>
+                                    <module
+                                            href="/components/panel.html"
+                                            locals='{
+                                                "header": "Večeře",
+                                                "headerColor": "",
+                                                "kcal": "518 kcal",
+                                                "color": "teal",
+                                                "panelStyle": "",
+                                                "icon": "fa/s/fish",
+                                                "iconColor": "319795"
+                                            }'
+                                    >
+                                        <div class="richtext">
+                                            <ul>
+                                                <li>Salát z červené řepy se sýrem cottage</li>
+                                            </ul>
+                                        </div>
+                                    </module>
+                                    <module
+                                            href="/components/panel.html"
+                                            locals='{
+                                                "header": "Aktivity",
+                                                "headerColor": "",
+                                                "kcal": "362 kcal",
+                                                "color": "green",
+                                                "panelStyle": "",
+                                                "icon": "remix/map/run-fill",
+                                                "iconColor": "8E9229"
+                                            }'
+                                    >
+                                        <div class="richtext">
+                                            <ul>
+                                                <li>Maso kuřecí prsa, bez kůže 200 g</li>
+                                                <li>Paprika zeleninová, zelená 70 g</li>
+                                                <li>Rajčata cherry 70 g</li>
+                                                <li>Brambory zimní, loupané, vařené v nesolené vodě 220 g</li>
+                                                <li>Olej řepkový, nízkoerukový 10 g Cibule 60 g</li>
+                                            </ul>
+                                        </div>
+                                    </module>
+                                    <div class="opacity-50">
+                                        <module
+                                                href="/components/panel.html"
+                                                locals='{
+                                                    "header": "Aktivity",
+                                                    "headerColor": "",
+                                                    "kcal": "362 kcal",
+                                                    "color": "green",
+                                                    "panelStyle": "",
+                                                    "icon": "remix/map/run-fill",
+                                                    "iconColor": "8E9229"
+                                                }'
+                                        >
+                                            <div class="richtext">
+                                                <ul>
+                                                    <li>Maso kuřecí prsa, bez kůže 200 g</li>
+                                                    <li>Paprika zeleninová, zelená 70 g</li>
+                                                    <li>Rajčata cherry 70 g</li>
+                                                    <li>Brambory zimní, loupané, vařené v nesolené vodě 220 g</li>
+                                                    <li>Olej řepkový, nízkoerukový 10 g Cibule 60 g</li>
+                                                </ul>
+                                            </div>
+                                        </module>
+                                    </div>
+                                    <module
+                                            href="/components/panel.html"
+                                            locals='{
+                                                "header": "Aktivity",
+                                                "headerColor": "",
+                                                "kcal": "362 kcal",
+                                                "color": "green",
+                                                "panelStyle": "",
+                                                "icon": "remix/map/run-fill",
+                                                "iconColor": "8E9229"
+                                            }'
+                                    >
+                                        <div class="richtext">
+                                            <ul>
+                                                <li>Maso kuřecí prsa, bez kůže 200 g</li>
+                                                <li>Paprika zeleninová, zelená 70 g</li>
+                                                <li>Rajčata cherry 70 g</li>
+                                                <li>Brambory zimní, loupané, vařené v nesolené vodě 220 g</li>
+                                                <li>Olej řepkový, nízkoerukový 10 g Cibule 60 g</li>
+                                            </ul>
+                                        </div>
+                                    </module>
+                                    <module
+                                            href="/components/panel.html"
+                                            locals='{
+                                                "header": "Aktivity",
+                                                "headerColor": "",
+                                                "kcal": "362 kcal",
+                                                "color": "green",
+                                                "panelStyle": "",
+                                                "icon": "remix/map/run-fill",
+                                                "iconColor": "8E9229"
+                                            }'
+                                    >
+                                        <div class="richtext">
+                                            <ul>
+                                                <li>Maso kuřecí prsa, bez kůže 200 g</li>
+                                                <li>Paprika zeleninová, zelená 70 g</li>
+                                                <li>Rajčata cherry 70 g</li>
+                                                <li>Brambory zimní, loupané, vařené v nesolené vodě 220 g</li>
+                                                <li>Olej řepkový, nízkoerukový 10 g Cibule 60 g</li>
+                                            </ul>
+                                        </div>
+                                    </module>
+                                    <div class="flex justify-end w-full">
+                                        Celková energie: <strong class="text-bold text-violet-500">1592 kcal</strong>
+                                    </div>
+                                </div>
+                                <div class="w-5/12 pl-1 pr-6">
+                                    <module
+                                            href="/components/panel.html"
+                                            locals='{
+                                                "header": "Mikro a makro živiny",
+                                                "headerColor": "",
+                                                "kcal": "",
+                                                "color": "gray",
+                                                "panelStyle": "hollow",
+                                                "icon": "",
+                                                "iconColor": "2B6CB0"
+                                            }'
+                                    >
+                                        <div class="flex flex-no-wrap py-2 my-2 -mx-4 text-gray-600 uppercase bg-gray-100 text-3xs">
+                                            <div class="w-2/3 pl-4 pr-1 font-bold">Název</div>
+                                            <div class="w-1/3 pl-1 pr-4 font-bold">Hodnota</div>
+                                        </div>
+                                        <div class="flex flex-no-wrap py-1 -mx-4">
+                                            <div class="w-2/3 pl-4 pr-1">Voda</div>
+                                            <div class="w-1/3 pl-1 pr-4 font-bold">1077 ml</div>
+                                        </div>
+                                        <div class="flex flex-no-wrap py-1 -mx-4">
+                                            <div class="w-2/3 pl-4 pr-1">Sacharidy</div>
+                                            <div class="w-1/3 pl-1 pr-4 font-bold">185 g</div>
+                                        </div>
+                                        <div class="flex flex-no-wrap py-1 -mx-4">
+                                            <div class="w-2/3 pl-8 pr-1">z toho cukry</div>
+                                            <div class="w-1/3 pl-1 pr-4 font-bold">24 g</div>
+                                        </div>
+                                        <div class="flex flex-no-wrap py-1 -mx-4">
+                                            <div class="w-2/3 pl-4 pr-1">Vláknina</div>
+                                            <div class="w-1/3 pl-1 pr-4 font-bold">42 g</div>
+                                        </div>
+                                        <div class="flex flex-no-wrap py-1 -mx-4">
+                                            <div class="w-2/3 pl-4 pr-1">Tuky</div>
+                                            <div class="w-1/3 pl-1 pr-4 font-bold">42 g</div>
+                                        </div>
+                                        <div class="flex flex-no-wrap py-1 -mx-4">
+                                            <div class="w-2/3 pl-8 pr-1">z toho nasycené</div>
+                                            <div class="w-1/3 pl-1 pr-4 font-bold">19 g</div>
+                                        </div>
+                                        <div class="flex flex-no-wrap py-1 -mx-4">
+                                            <div class="w-2/3 pl-8 pr-1">z toho nenasycené</div>
+                                            <div class="w-1/3 pl-1 pr-4 font-bold">0 g</div>
+                                        </div>
+                                        <div class="flex flex-no-wrap py-1 -mx-4">
+                                            <div class="w-2/3 pl-8 pr-1">Mononenasycené mastné kyseliny</div>
+                                            <div class="w-1/3 pl-1 pr-4 font-bold">24 g</div>
+                                        </div>
+                                        <div class="flex flex-no-wrap py-1 -mx-4">
+                                            <div class="w-2/3 pl-8 pr-1">Polynenasycené mastné kyseliny</div>
+                                            <div class="w-1/3 pl-1 pr-4 font-bold">24 g</div>
+                                        </div>
+                                        <div class="flex flex-no-wrap py-1 -mx-4">
+                                            <div class="w-2/3 pl-8 pr-1">Trans- mastné kyseliny</div>
+                                            <div class="w-1/3 pl-1 pr-4 font-bold">24 g</div>
+                                        </div>
+                                        <div class="flex flex-no-wrap py-1 -mx-4">
+                                            <div class="w-2/3 pl-8 pr-1">Cholesterol</div>
+                                            <div class="w-1/3 pl-1 pr-4 font-bold">24 g</div>
+                                        </div>
+                                        <div class="flex flex-no-wrap py-1 -mx-4">
+                                            <div class="w-2/3 pl-4 pr-1">Bílkoviny</div>
+                                            <div class="w-1/3 pl-1 pr-4 font-bold">110 g</div>
+                                        </div>
+                                    </module>
+                                </div>
                             </div>
-                        </module>
-                        <module
-                                href="/components/panel.html"
-                                locals='{
-                                    "header": "Oběd",
-                                    "headerColor": "",
-                                    "kcal": "362 kcal",
-                                    "color": "violet",
-                                    "panelStyle": "",
-                                    "icon": "fa/s/drumstick-bite",
-                                    "iconColor": "88395F"
-                                }'
-                        >
-                            <div class="richtext">
-                                <ul>
-                                    <li>Maso kuřecí prsa, bez kůže 200 g</li>
-                                    <li>Paprika zeleninová, zelená 70 g</li>
-                                    <li>Rajčata cherry 70 g</li>
-                                    <li>Brambory zimní, loupané, vařené v nesolené vodě 220 g</li>
-                                    <li>Olej řepkový, nízkoerukový 10 g Cibule 60 g</li>
-                                </ul>
+                        </td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                      <td class="h-28">
+                        <div class="fixed bottom-0 left-0 flex flex-col items-center w-full px-10 py-6 pb-3 mx-auto mb-4 text-gray-700 text-3xs">
+                            <div class="flex flex-no-wrap w-full py-3 border-t-2 border-gray-300 border-dotted">
+                                <div class="flex-shrink-0">
+                                    <img src="./assets/logo.svg" class="w-24">
+                                </div>
+                                <div class="flex items-center justify-end flex-1">
+                                    <div class="ml-4">Exportováno: <span class="inline-block px-2 ml-1 font-bold leading-4 bg-gray-200 rounded-full">4. 2. 2020 19:42</span></div>
+                                </div>
                             </div>
-                        </module>
-                        <module
-                                href="/components/panel.html"
-                                locals='{
-                                    "header": "Svačina",
-                                    "headerColor": "",
-                                    "kcal": "164 kcal",
-                                    "color": "gray",
-                                    "panelStyle": "",
-                                    "icon": "fa/s/apple-alt",
-                                    "iconColor": "718096"
-                                }'
-                        >
-                            <div class="richtext">
-                                <ul>
-                                    <li>Tvaroh polotučný 150 g</li>
-                                </ul>
+                            <div class="w-full mt-2 text-2xs">
+                                Pacient byl poučen a seznámen se všemi riziky.
                             </div>
-                        </module>
-                        <module
-                                href="/components/panel.html"
-                                locals='{
-                                    "header": "Večeře",
-                                    "headerColor": "",
-                                    "kcal": "518 kcal",
-                                    "color": "teal",
-                                    "panelStyle": "",
-                                    "icon": "fa/s/fish",
-                                    "iconColor": "319795"
-                                }'
-                        >
-                            <div class="richtext">
-                                <ul>
-                                    <li>Salát z červené řepy se sýrem cottage</li>
-                                </ul>
-                            </div>
-                        </module>
-                        <module
-                                href="/components/panel.html"
-                                locals='{
-                                    "header": "Aktivity",
-                                    "headerColor": "",
-                                    "kcal": "362 kcal",
-                                    "color": "green",
-                                    "panelStyle": "",
-                                    "icon": "remix/map/run-fill",
-                                    "iconColor": "8E9229"
-                                }'
-                        >
-                            <div class="richtext">
-                                <ul>
-                                    <li>Maso kuřecí prsa, bez kůže 200 g</li>
-                                    <li>Paprika zeleninová, zelená 70 g</li>
-                                    <li>Rajčata cherry 70 g</li>
-                                    <li>Brambory zimní, loupané, vařené v nesolené vodě 220 g</li>
-                                    <li>Olej řepkový, nízkoerukový 10 g Cibule 60 g</li>
-                                </ul>
-                            </div>
-                        </module>
-                        <module
-                                href="/components/panel.html"
-                                locals='{
-                                    "header": "Aktivity",
-                                    "headerColor": "",
-                                    "kcal": "362 kcal",
-                                    "color": "green",
-                                    "panelStyle": "",
-                                    "icon": "remix/map/run-fill",
-                                    "iconColor": "8E9229"
-                                }'
-                        >
-                            <div class="richtext">
-                                <ul>
-                                    <li>Maso kuřecí prsa, bez kůže 200 g</li>
-                                    <li>Paprika zeleninová, zelená 70 g</li>
-                                    <li>Rajčata cherry 70 g</li>
-                                    <li>Brambory zimní, loupané, vařené v nesolené vodě 220 g</li>
-                                    <li>Olej řepkový, nízkoerukový 10 g Cibule 60 g</li>
-                                </ul>
-                            </div>
-                        </module>
-                        <module
-                                href="/components/panel.html"
-                                locals='{
-                                    "header": "Aktivity",
-                                    "headerColor": "",
-                                    "kcal": "362 kcal",
-                                    "color": "green",
-                                    "panelStyle": "",
-                                    "icon": "remix/map/run-fill",
-                                    "iconColor": "8E9229"
-                                }'
-                        >
-                            <div class="richtext">
-                                <ul>
-                                    <li>Maso kuřecí prsa, bez kůže 200 g</li>
-                                    <li>Paprika zeleninová, zelená 70 g</li>
-                                    <li>Rajčata cherry 70 g</li>
-                                    <li>Brambory zimní, loupané, vařené v nesolené vodě 220 g</li>
-                                    <li>Olej řepkový, nízkoerukový 10 g Cibule 60 g</li>
-                                </ul>
-                            </div>
-                        </module>
-                        <module
-                                href="/components/panel.html"
-                                locals='{
-                                    "header": "Aktivity",
-                                    "headerColor": "",
-                                    "kcal": "362 kcal",
-                                    "color": "green",
-                                    "panelStyle": "",
-                                    "icon": "remix/map/run-fill",
-                                    "iconColor": "8E9229"
-                                }'
-                        >
-                            <div class="richtext">
-                                <ul>
-                                    <li>Maso kuřecí prsa, bez kůže 200 g</li>
-                                    <li>Paprika zeleninová, zelená 70 g</li>
-                                    <li>Rajčata cherry 70 g</li>
-                                    <li>Brambory zimní, loupané, vařené v nesolené vodě 220 g</li>
-                                    <li>Olej řepkový, nízkoerukový 10 g Cibule 60 g</li>
-                                </ul>
-                            </div>
-                        </module>
-                        <div class="flex justify-end w-full">
-                            Celková energie: <strong class="text-bold text-violet-500">1592 kcal</strong>
                         </div>
-                    </div>
-                    <div class="w-5/12 pl-1 pr-6">
-                        <module
-                                href="/components/panel.html"
-                                locals='{
-                                    "header": "Mikro a makro živiny",
-                                    "headerColor": "",
-                                    "kcal": "",
-                                    "color": "gray",
-                                    "panelStyle": "hollow",
-                                    "icon": "",
-                                    "iconColor": "2B6CB0"
-                                }'
-                        >
-                            <div class="flex flex-no-wrap py-2 my-2 -mx-4 text-gray-600 uppercase bg-gray-100 text-3xs">
-                                <div class="w-2/3 pl-4 pr-1 font-bold">Název</div>
-                                <div class="w-1/3 pl-1 pr-4 font-bold">Hodnota</div>
-                            </div>
-                            <div class="flex flex-no-wrap py-1 -mx-4">
-                                <div class="w-2/3 pl-4 pr-1">Voda</div>
-                                <div class="w-1/3 pl-1 pr-4 font-bold">1077 ml</div>
-                            </div>
-                            <div class="flex flex-no-wrap py-1 -mx-4">
-                                <div class="w-2/3 pl-4 pr-1">Sacharidy</div>
-                                <div class="w-1/3 pl-1 pr-4 font-bold">185 g</div>
-                            </div>
-                            <div class="flex flex-no-wrap py-1 -mx-4">
-                                <div class="w-2/3 pl-8 pr-1">z toho cukry</div>
-                                <div class="w-1/3 pl-1 pr-4 font-bold">24 g</div>
-                            </div>
-                            <div class="flex flex-no-wrap py-1 -mx-4">
-                                <div class="w-2/3 pl-4 pr-1">Vláknina</div>
-                                <div class="w-1/3 pl-1 pr-4 font-bold">42 g</div>
-                            </div>
-                            <div class="flex flex-no-wrap py-1 -mx-4">
-                                <div class="w-2/3 pl-4 pr-1">Tuky</div>
-                                <div class="w-1/3 pl-1 pr-4 font-bold">42 g</div>
-                            </div>
-                            <div class="flex flex-no-wrap py-1 -mx-4">
-                                <div class="w-2/3 pl-8 pr-1">z toho nasycené</div>
-                                <div class="w-1/3 pl-1 pr-4 font-bold">19 g</div>
-                            </div>
-                            <div class="flex flex-no-wrap py-1 -mx-4">
-                                <div class="w-2/3 pl-8 pr-1">z toho nenasycené</div>
-                                <div class="w-1/3 pl-1 pr-4 font-bold">0 g</div>
-                            </div>
-                            <div class="flex flex-no-wrap py-1 -mx-4">
-                                <div class="w-2/3 pl-8 pr-1">Mononenasycené mastné kyseliny</div>
-                                <div class="w-1/3 pl-1 pr-4 font-bold">24 g</div>
-                            </div>
-                            <div class="flex flex-no-wrap py-1 -mx-4">
-                                <div class="w-2/3 pl-8 pr-1">Polynenasycené mastné kyseliny</div>
-                                <div class="w-1/3 pl-1 pr-4 font-bold">24 g</div>
-                            </div>
-                            <div class="flex flex-no-wrap py-1 -mx-4">
-                                <div class="w-2/3 pl-8 pr-1">Trans- mastné kyseliny</div>
-                                <div class="w-1/3 pl-1 pr-4 font-bold">24 g</div>
-                            </div>
-                            <div class="flex flex-no-wrap py-1 -mx-4">
-                                <div class="w-2/3 pl-8 pr-1">Cholesterol</div>
-                                <div class="w-1/3 pl-1 pr-4 font-bold">24 g</div>
-                            </div>
-                            <div class="flex flex-no-wrap py-1 -mx-4">
-                                <div class="w-2/3 pl-4 pr-1">Bílkoviny</div>
-                                <div class="w-1/3 pl-1 pr-4 font-bold">110 g</div>
-                            </div>
-                        </module>
-                    </div>
-                </div>
-            </section>
-        </module>
-        <module href="/components/footer.html"></module>
+                      </td>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
 		<script> </script>
 	</body>
 </html>
